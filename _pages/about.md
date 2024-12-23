@@ -34,8 +34,6 @@ More recently, I'm interested in the following problems (feel free to drop an em
   
 **Contact**: (username id) akk002 at ucsd dot edu
 
-<span style="color:red"><i> I'm looking for a research/engineer position for a summer internship in 2025. Please request a CV via email. </i></span>
-
 # Recent News
 1. [Dec, 2024] Attended [Unknown Futures of Generalization workshop](https://simons.berkeley.edu/workshops/unknown-futures-generalization) at Simons Institute, UC Berkeley.
 1. [Summer, 2023] I was a research scientist intern at Adobe Research (San Jose, CA).
