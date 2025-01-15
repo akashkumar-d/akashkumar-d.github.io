@@ -42,49 +42,55 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 # Publications and Preprints
 
-1. <b> Learning Smooth Distance Functions via Queries </b> <br>
+1. <b> On the Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
+**Akash Kumar** (single author) <br>
+<i>In preparation for a conference submission. <br>
+[[ArXiv coming soon]()]
+
+3. <b> Learning Smooth Distance Functions via Queries </b> <br>
 **Akash Kumar**, Sanjoy Dasgupta <br>
 <i>In submission to a conference.<br>
 [[ArXiv 2024](https://arxiv.org/pdf/2412.01290)]
 
-2. <b> Mirror Descent on Reproducing Kernel Banach Space (RKBS) </b> <br>
+4. <b> Mirror Descent on Reproducing Kernel Banach Space (RKBS) </b> <br>
 **Akash Kumar**, Misha Belkin, Parthe Pandit <br>
 <i>In submission to a Journal.<br>
 [[ArXiv 2024](https://arxiv.org/abs/2411.11242)]
 
-3. <b> Convergence of Nearest Neighbor Selective Classification </b> <br>
+5. <b> Convergence of Nearest Neighbor Selective Classification </b> <br>
 **Akash Kumar**, Sanjoy Dasgupta<br>
 <i>Manuscript on request.</i>
 
-4. <b> Robust Empirical Risk Minimization with Tolerance </b> <br>
+6. <b> Robust Empirical Risk Minimization with Tolerance </b> <br>
 Robi Bhattacharjee, Kamalika Chaudhuri, Max Hopkins, **Akash Kumar**, Hantao Yu (alphabetical order)<br>
 <i> Accepted in The 34th International Conference on Algorithmic Learning Theory (ALT'23), 2023
 </i> <br>A preliminary version appeared in AdvML Frontiers @ ICML 2022<br>
 [[ArXiv 2023](https://arxiv.org/abs/2210.00635)]
 
-5. <b> Teaching via Best-Case Counterexamples
+7. <b> Teaching via Best-Case Counterexamples
 in the Learning-with-Equivalence-Queries Paradigm </b> <br>
 **Akash Kumar**, [Yuxin Chen](https://yuxinchen.org/), [Adish Singla](https://machineteaching.mpi-sws.org/adishsingla.html).<br>
 <i> Accepted in The 35th Conference on Neural Information Processing Systems (NeurIPS'21), 2021
 </i> <br> [[Proc 2021](https://papers.nips.cc/paper/2021/file/e22dd5dabde45eda5a1a67772c8e25dd-Paper.pdf)], [[Openreview](https://openreview.net/forum?id=Ee7IOrpLwT)]<br>
 
-6. <b> The Teaching Dimension of Kernel Perceptrons </b> <br>
+8. <b> The Teaching Dimension of Kernel Perceptrons </b> <br>
 **Akash Kumar**, Hanqi Zhang, [Adish Singla](https://machineteaching.mpi-sws.org/adishsingla.html), [Yuxin Chen](https://yuxinchen.org/).<br>
 <i> Accepted in The 24th International Conference on Artificial Intelligence and Statistics (AISTATS'21), 2021 
 </i> <br> [[ArXiv 2021](https://arxiv.org/pdf/2010.14043.pdf)], [[Proc 2021](http://proceedings.mlr.press/v130/kumar21a.html)]<br>
 
-7. <b> Average-case Complexity of Teaching Convex Polytopes via Halfspace Queries </b> <br>
+9. <b> Average-case Complexity of Teaching Convex Polytopes via Halfspace Queries </b> <br>
 **Akash Kumar**, [Adish Singla](https://machineteaching.mpi-sws.org/adishsingla.html), [Yisong Yue](http://www.yisongyue.com/), [Yuxin Chen](https://yuxinchen.org/).<br> 
 [[ArXiv 2020](https://arxiv.org/abs/2006.14677)]
 <br><i>Rejected from ICML 2021 with 6 [reviews](https://akashkumar-d.github.io/files/ICML'21.pdf)</i><br>
 <i>Rejected from NeurlPS 2020 with 4 [reviews](https://akashkumar-d.github.io/files/NeurIPS'20.pdf)<br></i>
 
 
-8. <b> Deletion to Induced Matching </b> <br>
+10. <b> Deletion to Induced Matching </b> <br>
 **Akash Kumar**, Mithilesh Kumar.<br> 
 [[ArXiv 2020](https://arxiv.org/abs/2008.09660)]
 
 # Recent talks
+Learning Smooth Distance Functions via Queries (UCSD Presentation)<br>
 Feature Learning in Large Language Models (Adobe Research, San Jose)<br>
 Teaching via Best-case Counterexamples (UCSD AI Seminar)
 
