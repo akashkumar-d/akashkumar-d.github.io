@@ -90,7 +90,7 @@ in the Learning-with-Equivalence-Queries Paradigm </b> <br>
 [[ArXiv 2020](https://arxiv.org/abs/2008.09660)]
 
 # Recent talks
-Learning Smooth Distance Functions via Queries (UCSD Presentation)<br>
+Learning Smooth Distance Functions via Queries (UCSD Presentation) [[Slides](https://drive.google.com/file/d/1vmprFyvcK6mb9zrEU9-55ZWij04WqkOz/view?usp=drive_link)]<br>
 Feature Learning in Large Language Models (Adobe Research, San Jose)<br>
 Teaching via Best-case Counterexamples (UCSD AI Seminar)
 
