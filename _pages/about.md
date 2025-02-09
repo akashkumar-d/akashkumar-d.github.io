@@ -15,7 +15,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 <div align="center">
   <p style="
-      color: white; 
+      color: #4682B4; 
       font-size: 12px; 
       font-weight: bold; 
       border: 1.5px solid #4682B4; 
@@ -23,7 +23,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
       display: inline-block;
       border-radius: 10px;
       background: linear-gradient(135deg, #1E3C72, #2A5298);
-      color: #4682B4;
+      color: white;
   ">
     तद्वनः मम हृदये वसति। <br>
     <i>Tadvanaḥ mama hṛdaye vasati.</i> <br>
