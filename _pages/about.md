@@ -13,6 +13,23 @@ I am a 4th year PhD student in the [Computer Science department](https://cse.ucs
 
 I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.<be>
 
+<div align="center">
+  <p style="
+      color: #4682B4; 
+      font-size: 24px; 
+      font-weight: bold; 
+      border: 2px solid #4682B4; 
+      padding: 10px; 
+      display: inline-block;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #1E3C72, #2A5298);
+      color: white;
+  ">
+    तद्वनः मम हृदये वसति। <br>
+    <i>Tadvanaḥ mama hṛdaye vasati.</i> <br>
+  </p>
+</div>
+
 More recently, I'm interested in the following problems (feel free to drop an email if you have interesting ideas to discuss):
 
 - **Learning Distance Functions:**  
