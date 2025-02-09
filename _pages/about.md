@@ -18,8 +18,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
       color: #4682B4; 
       font-size: 12px; 
       font-weight: bold; 
-      border: 2px solid #4682B4; 
-      padding: 10px; 
+      border: 1.5px solid #4682B4; 
+      padding: 8px; 
       display: inline-block;
       border-radius: 10px;
       background: linear-gradient(135deg, #1E3C72, #2A5298);
