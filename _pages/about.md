@@ -59,7 +59,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 # Publications and Preprints
 
-**†: Equal Advising
+**† Equal Contribution**
 
 1. <b> Gap in Gaussian RKHS and Neural Networks: An infinite sample asymptotic </b> <br>
 **Akash Kumar**, Rahul Parhi†, Misha Belkin† <br>
