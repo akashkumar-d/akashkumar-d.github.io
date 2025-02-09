@@ -59,9 +59,9 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 # Publications and Preprints
 
-1. <b> On the Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
-**Akash Kumar** (single author) <br>
-<i>In preparation for a conference submission. <br>
+1. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
+**Akash Kumar** <br>
+<i>In submission to a conference.<br>
 [[ArXiv coming soon]()]
 
 3. <b> Learning Smooth Distance Functions via Queries </b> <br>
