@@ -15,7 +15,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 <div align="center">
   <p style="
-      color: #4682B4; 
+      color: white; 
       font-size: 12px; 
       font-weight: bold; 
       border: 1.5px solid #4682B4; 
@@ -23,7 +23,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
       display: inline-block;
       border-radius: 10px;
       background: linear-gradient(135deg, #1E3C72, #2A5298);
-      color: white;
+      color: #4682B4;
   ">
     तद्वनः मम हृदये वसति। <br>
     <i>Tadvanaḥ mama hṛdaye vasati.</i> <br>
@@ -59,11 +59,11 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 # Publications and Preprints
 
-<span style="font-size: 18px; font-weight: bold; vertical-align: super;">‡</span> Equal Advising
+<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> Equal Advising
 
 
 1. <b> Gap in Gaussian RKHS and Neural Networks: An infinite sample asymptotic </b> <br>
-**Akash Kumar**, Rahul Parhi **‡**, Misha Belkin **‡** <br>
+**Akash Kumar**, Rahul Parhi<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span>, Misha Belkin<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> **‡** <br>
 <i>In submission to a conference.<br>
 [[ArXiv coming soon]()]
 
