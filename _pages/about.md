@@ -7,7 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<body style="background-color: #4682B4; color: white; font-family: Arial, sans-serif;">
 
 # About Me
 I am a 4th year PhD student in the [Computer Science department](https://cse.ucsd.edu/) at the University of California San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). Previously, I have held positions as a research scientist intern/fellow at Adobe Research (San Jose, CA, USA), Max Planck Institute for Software Systems (Saarbrücken, Germany), and IBM Research (Bengaluru, IN).
@@ -131,4 +130,3 @@ Teaching via Best-case Counterexamples (UCSD AI Seminar)
 <b> [Natural Proofs Vs Derandomization](https://drive.google.com/file/d/1TeHXyLIIUfp0p4iPqRqgNKwUx92ZO0Qn/view?usp=sharing) </b> <br>
 <i>Project report completed as part of the Advanced Complexity course at Chennai Mathematical Institute.</i>
  
-</body>
