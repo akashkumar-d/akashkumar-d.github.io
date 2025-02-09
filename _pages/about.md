@@ -7,12 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-# About Me
-I am a 4th year PhD student in the [Computer Science department](https://cse.ucsd.edu/) at the University of California San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). Previously, I have held positions as a research scientist intern/fellow at Adobe Research (San Jose, CA, USA), Max Planck Institute for Software Systems (Saarbrücken, Germany), and IBM Research (Bengaluru, IN).
-
-I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.<be>
-
 <div align="center">
   <p style="
       color: #4682B4; 
@@ -28,6 +22,11 @@ I am broadly interested in advancing both the theoretical foundations and practi
     <i>Tadvanaḥ mama hṛdaye vasati.</i> <br>
   </p>
 </div>
+
+# About Me
+I am a 4th year PhD student in the [Computer Science department](https://cse.ucsd.edu/) at the University of California San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). Previously, I have held positions as a research scientist intern/fellow at Adobe Research (San Jose, CA, USA), Max Planck Institute for Software Systems (Saarbrücken, Germany), and IBM Research (Bengaluru, IN).
+
+I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.<be>
 
 More recently, I'm interested in the following problems (feel free to drop an email if you have interesting ideas to discuss):
 
