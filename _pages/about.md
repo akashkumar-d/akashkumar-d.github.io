@@ -33,7 +33,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 - **Learning Distance Functions:**  
   Exploring the intersection of manifold learning, linear representation hypothesis, and classical distance learning.<br>
-  [ArXiv 2024](https://arxiv.org/pdf/2412.01290), [[ArXiv 2025](https://arxiv.org/submit/6175627/view)]
+  [ArXiv 2024](https://arxiv.org/pdf/2412.01290), [ArXiv 2025](https://arxiv.org/submit/6175627/view)
 
 
 - **Kernel Machines:**  
