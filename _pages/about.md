@@ -16,7 +16,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 <div align="center">
   <p style="
       color: #4682B4; 
-      font-size: 24px; 
+      font-size: 12px; 
       font-weight: bold; 
       border: 2px solid #4682B4; 
       padding: 10px; 
