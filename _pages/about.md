@@ -59,7 +59,14 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 # Publications and Preprints
 
-1. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
+**†: Equal Advising
+
+1. <b> Gap in Gaussian RKHS and Neural Networks: An infinite sample asymptotic </b> <br>
+**Akash Kumar**, Rahul Parhi†, Misha Belkin† <br>
+<i>In submission to a conference.<br>
+[[ArXiv coming soon]()]
+
+2. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
 **Akash Kumar** <br>
 <i>In submission to a conference.<br>
 [[ArXiv coming soon]()]
