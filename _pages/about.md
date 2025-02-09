@@ -69,7 +69,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 2. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
 **Akash Kumar** <br>
 <i>In submission to a conference.<br>
-[[ArXiv coming soon]()]
+[[ArXiv 2025](https://arxiv.org/submit/6175627/view)]
 
 3. <b> Learning Smooth Distance Functions via Queries </b> <br>
 **Akash Kumar**, Sanjoy Dasgupta <br>
