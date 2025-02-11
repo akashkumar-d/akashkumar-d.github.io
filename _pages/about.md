@@ -9,19 +9,24 @@ redirect_from:
 ---
 <div align="center">
   <p style="
-      color: #4682B4; 
-      font-size: 12px; 
-      font-weight: bold; 
-      border: 1.5px solid #4682B4; 
-      padding: 8px; 
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+      font-weight: bold;
+      border: 2px solid #FFD700; 
+      padding: 10px; 
       display: inline-block;
       border-radius: 10px;
       background-color: white;
+      color: #FFD700;
+      text-shadow: 1px 1px 3px #b8860b;
   ">
     तद्वनः मम हृदये वसति। <br>
     <i>Tadvanaḥ mama hṛdaye vasati.</i> <br>
   </p>
 </div>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
 
 # About Me
 I am a 4th year PhD student in the [Computer Science department](https://cse.ucsd.edu/) at the University of California San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). Previously, I have held positions as a research scientist intern/fellow at Adobe Research (San Jose, CA, USA), Max Planck Institute for Software Systems (Saarbrücken, Germany), and IBM Research (Bengaluru, IN).
