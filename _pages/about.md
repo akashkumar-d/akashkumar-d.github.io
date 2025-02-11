@@ -32,7 +32,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 - **Learning Distance Functions:**  
   Exploring the intersection of manifold learning, linear representation hypothesis, and classical distance learning.<br>
-  [ArXiv 2024](https://arxiv.org/pdf/2412.01290), [ArXiv 2025](https://arxiv.org/submit/6175627/view)
+  [ArXiv 2024](https://arxiv.org/pdf/2412.01290), [ArXiv 2025](https://arxiv.org/abs/2502.05407)
 
 
 - **Kernel Machines:**  
@@ -69,7 +69,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 2. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
 **Akash Kumar** <br>
 <i>In submission to a conference.<br>
-[[ArXiv 2025](https://arxiv.org/submit/6175627/view)]
+[[ArXiv 2025](https://arxiv.org/abs/2502.05407)]
 
 3. <b> Learning Smooth Distance Functions via Queries </b> <br>
 **Akash Kumar**, Sanjoy Dasgupta <br>
