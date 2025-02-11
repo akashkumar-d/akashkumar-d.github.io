@@ -16,12 +16,12 @@ redirect_from:
       padding: 10px; 
       display: inline-block;
       border-radius: 10px;
-      background-color: white;
+      background: linear-gradient(135deg, #1E1E1E, #3A3A3A);
       color: #FFD700;
       text-shadow: 1px 1px 3px #b8860b;
   ">
     तद्वनः मम हृदये वसति। <br>
-    <i>Tadvanaḥ mama hṛdaye vasati.</i> <br>
+    <i style="font-family: serif; font-weight: normal; text-transform: none;">Tadvanaḥ mama hṛdaye vasati.</i> <br>
   </p>
 </div>
 
