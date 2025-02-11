@@ -51,6 +51,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 **Contact**: (username id) akk002 at ucsd dot edu
 
 # Recent News
+1. [Feb, 2025] Presenting my recent work at ITA'25 (San Diego) and reviewing for COLT'25.
 1. [Dec, 2024] Attended [Unknown Futures of Generalization workshop](https://simons.berkeley.edu/workshops/unknown-futures-generalization) at Simons Institute, UC Berkeley.
 1. [Summer, 2023] I was a research scientist intern at Adobe Research (San Jose, CA).
 1. [Aug, 2022] Attended the [Deep learning theory workshop](https://simons.berkeley.edu/workshops/deep-learning-theory-workshop) at Simons Institute, UC Berkeley.
