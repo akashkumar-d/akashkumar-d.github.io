@@ -70,7 +70,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 1. <b> Gap in Gaussian RKHS and Neural Networks: An infinite sample asymptotic </b> <br>
 **Akash Kumar**, Rahul Parhi<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span>, Misha Belkin<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> <br>
 <i>In submission to a conference.<br>
-[[ArXiv coming soon]()]
+[[ArXiv 2025](https://arxiv.org/abs/2502.16331)]
 
 2. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
 **Akash Kumar** <br>
