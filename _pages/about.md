@@ -56,6 +56,8 @@ More recently, I'm interested in the following problems (feel free to drop an em
 **Contact**: (username id) akk002 at ucsd dot edu
 
 # Recent News
+1. [May, 2025] Selected for the [Summer School](https://mlschool.princeton.edu/) on machine learning theory at Princeton University. 
+1. [May, 2025] One paper to appear in JMLR 2025.
 1. [May, 2025] Two papers accepted, one each in ICML 2025 and COLT 2025.
 1. [Feb, 2025] Presenting my recent work at ITA'25 (San Diego) and reviewing for COLT'25.
 1. [Dec, 2024] Attended [Unknown Futures of Generalization workshop](https://simons.berkeley.edu/workshops/unknown-futures-generalization) at Simons Institute, UC Berkeley.
@@ -67,33 +69,32 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 <span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> Equal Advising
 
-1. <b> Is Interpretability at Odds with Accuracy: Insights from Inapproximability of Non-parametric Models with Shallow Networks? </b> <br>
+1. <b> Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks </b> <br>
 **Akash Kumar** <br>
-<i>In preparation for a submission.<br>
+<i>In submission.<br>
 [[Arxiv Coming Soon]()]
 
-
-1. <b> A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis </b> <br>
-**Akash Kumar**, Rahul Parhi<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span>, Misha Belkin<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> <br>
-<i>Accepted in The 38th Annual Conference on Learning Theory (COLT 2025).<br>
-[[ArXiv 2025](https://arxiv.org/abs/2502.16331)]
-
-2. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
-**Akash Kumar** <br>
-<i>Accepted in The 42nd International Conference on Machine Learning (ICML 2025).<br>
-[[ArXiv 2025](https://arxiv.org/abs/2502.05407)]
-
-3. <b> Learning Smooth Distance Functions via Queries </b> <br>
+2. <b> Learning Smooth Distance Functions via Queries </b> <br>
 **Akash Kumar**, Sanjoy Dasgupta <br>
 <i>In submission to a conference.<br>
 [[ArXiv 2024](https://arxiv.org/pdf/2412.01290)]
 
+3. <b> A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis </b> <br>
+**Akash Kumar**, Rahul Parhi<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span>, Misha Belkin<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> <br>
+<i>Accepted in The 38th Annual Conference on Learning Theory (COLT 2025).<br>
+[[ArXiv 2025](https://arxiv.org/abs/2502.16331)]
+
 4. <b> Mirror Descent on Reproducing Kernel Banach Space (RKBS) </b> <br>
 **Akash Kumar**, Misha Belkin, Parthe Pandit <br>
-<i>In submission to a Journal.<br>
+<i>To Appear in the Journal of Machine Learning Research (JMLR 2025).<br>
 [[ArXiv 2024](https://arxiv.org/abs/2411.11242)]
 
-5. <b> Convergence of Nearest Neighbor Selective Classification </b> <br>
+5. <b> The Complexity of Learning Sparse Superposed Features with Feedback </b> <br>
+**Akash Kumar** <br>
+<i>Accepted in The 42nd International Conference on Machine Learning (ICML 2025).<br>
+[[ArXiv 2025](https://arxiv.org/abs/2502.05407)]
+
+6. <b> Convergence of Nearest Neighbor Selective Classification </b> <br>
 **Akash Kumar**, Sanjoy Dasgupta<br>
 <i>Manuscript on request.</i>
 
