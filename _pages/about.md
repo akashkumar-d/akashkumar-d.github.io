@@ -67,8 +67,6 @@ More recently, I'm interested in the following problems (feel free to drop an em
 
 # Publications and Preprints
 
-<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> Equal Advising
-
 1. <b> Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks </b> <br>
 **Akash Kumar** <br>
 <i>In submission.<br>
@@ -80,7 +78,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 [[ArXiv 2024](https://arxiv.org/pdf/2412.01290)]
 
 3. <b> A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis </b> <br>
-**Akash Kumar**, Rahul Parhi<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span>, Misha Belkin<span style="font-size: 13px; font-weight: bold; vertical-align: super;">†</span> <br>
+**Akash Kumar**, Rahul Parhi, Misha Belkin <br>
 <i>Accepted in The 38th Annual Conference on Learning Theory (COLT 2025).<br>
 [[ArXiv 2025](https://arxiv.org/abs/2502.16331)]
 
