@@ -478,18 +478,24 @@
 
 /* Inline abstract toggle styles */
 details.inline-abstract {
-  display: inline-block;
+  display: inline; /* keep baseline stable; avoid vertical shift on toggle */
   margin-left: 0.25em;
+  vertical-align: baseline;
 }
 
 details.inline-abstract > summary {
-  display: inline;
+  display: inline; /* keep the toggle inline with surrounding text */
   cursor: pointer;
-  color: #0b7a0b; /* dark green */
+  color: $link-color; /* match standard link color (same as title links) */
   text-decoration: underline;
-  list-style: none;
+  list-style: none; /* hide default list marker */
   font-weight: normal; /* ensure not bold */
+  line-height: inherit; /* prevent jumpiness */
 }
+
+/* Hide platform-specific disclosure markers to prevent layout shift */
+details.inline-abstract > summary::-webkit-details-marker { display: none; }
+details.inline-abstract > summary::marker { content: ''; }
 
 details.inline-abstract[open] > summary {
   text-decoration: none;
@@ -499,8 +505,10 @@ details.inline-abstract .abstract-text {
   display: block;
   margin-top: 0.5em;
   color: #2f2f2f; /* slightly darker for readability */
-  font-style: italic;
-  line-height: 1.5;
+  font-style: normal; /* standard text as requested */
+  line-height: 1.6;
+  border-left: 2px solid rgba(0,0,0,0.15); /* vertical guideline for abstract extent */
+  padding-left: 0.75em; /* spacing from the guideline */
 }
 
 /* Venue / conference label styling (purple/dark pink) */
@@ -510,6 +518,6 @@ details.inline-abstract .abstract-text {
 
 /* Publication link labels (proceedings/arxiv/abstract indicators) */
 .pub-link {
-  color: #0b7a0b; /* dark green labels */
+  color: $link-color; /* match title/link color */
   text-decoration: underline;
 }
