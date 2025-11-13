@@ -62,11 +62,19 @@ I am broadly interested in advancing both the theoretical foundations and practi
     <b>{{ pub.title }}</b><br>
     {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
     {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
-    {% if pub.paperurl %}
-      {% if pub.paperurl contains 'arxiv.org' %}
-        <a href="{{ pub.paperurl }}">ArXiv</a>
+    {% assign has_pdf = pub.paperurl %}
+    {% assign has_arxiv = pub.arxiv %}
+    {% if has_pdf or has_arxiv %}
+      {% if has_pdf and has_arxiv %}
+        <a href="{{ pub.paperurl }}">PDF</a> · <a href="{{ pub.arxiv }}">ArXiv</a>
+      {% elsif has_pdf %}
+        {% if pub.paperurl contains 'arxiv.org' %}
+          <a href="{{ pub.paperurl }}">ArXiv</a>
+        {% else %}
+          <a href="{{ pub.paperurl }}">PDF</a>
+        {% endif %}
       {% else %}
-        <a href="{{ pub.paperurl }}">Link</a>
+        <a href="{{ pub.arxiv }}">ArXiv</a>
       {% endif %}
     {% endif %}
   </li>
