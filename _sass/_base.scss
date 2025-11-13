@@ -14,6 +14,7 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
+  background-color: $background-color; // ensure page background tint applies even if theme sets other backgrounds
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
