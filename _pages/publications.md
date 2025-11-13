@@ -42,7 +42,13 @@ author_profile: true
     <b>{{ post.title }}</b><br>
     {% if post.authors %}{{ post.authors }}<br>{% endif %}
     {% if post.venue %}<i>{{ post.venue }}</i><br>{% endif %}
-    {% if post.paperurl %}[[Link]({{ post.paperurl }})]{% endif %}
+    {% if post.paperurl %}
+      {% if post.paperurl contains 'arxiv.org' %}
+        [[ArXiv]({{ post.paperurl }})]
+      {% else %}
+        [[Link]({{ post.paperurl }})]
+      {% endif %}
+    {% endif %}
   </li>
 {% endfor %}
 </ul>

@@ -62,7 +62,13 @@ I am broadly interested in advancing both the theoretical foundations and practi
     <b>{{ pub.title }}</b><br>
     {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
     {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
-    {% if pub.paperurl %}[[Link]({{ pub.paperurl }})]{% endif %}
+    {% if pub.paperurl %}
+      {% if pub.paperurl contains 'arxiv.org' %}
+        [[ArXiv]({{ pub.paperurl }})]
+      {% else %}
+        [[Link]({{ pub.paperurl }})]
+      {% endif %}
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
