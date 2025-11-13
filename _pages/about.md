@@ -64,9 +64,9 @@ I am broadly interested in advancing both the theoretical foundations and practi
     {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
     {% if pub.paperurl %}
       {% if pub.paperurl contains 'arxiv.org' %}
-        [<a href="{{ pub.paperurl }}">ArXiv</a>]
+        <a href="{{ pub.paperurl }}">ArXiv</a>
       {% else %}
-        [<a href="{{ pub.paperurl }}">Link</a>]
+        <a href="{{ pub.paperurl }}">Link</a>
       {% endif %}
     {% endif %}
   </li>
