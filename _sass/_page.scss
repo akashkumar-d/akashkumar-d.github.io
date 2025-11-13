@@ -421,7 +421,7 @@
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;
   /* slightly lighter than page background to hint scroll area */
-  background: mix(#fff, $background-color, 85%);
+  background: mix(#fff, $background-color, 75%);
   -webkit-overflow-scrolling: touch;
 }
 
