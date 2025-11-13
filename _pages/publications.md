@@ -31,6 +31,11 @@ author_profile: true
 **Akash Kumar**, <a href="https://machineteaching.mpi-sws.org/adishsingla.html">Adish Singla</a>, <a href="http://www.yisongyue.com/">Yisong Yue</a>, <a href="https://yuxinchen.org/">Yuxin Chen</a>.<br>
 [[ArXiv 2020](https://arxiv.org/abs/2006.14677)]
 
+- <b> Deletion to Induced Matching </b> <br>
+**A Kumar**, M Kumar <br>
+<i>arXiv preprint arXiv:2008.09660</i><br>
+<a href="https://arxiv.org/abs/2008.09660">ArXiv</a>
+
 ---
 
 ## Publications

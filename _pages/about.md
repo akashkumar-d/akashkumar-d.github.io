@@ -60,35 +60,28 @@ I am broadly interested in advancing both the theoretical foundations and practi
 {% for pub in selected_pubs %}
   <li>
     {% assign primary_link = nil %}
-    {% if pub.paperurl and pub.paperurl contains 'arxiv.org' %}
-      {% assign primary_link = pub.arxiv | default: pub.paperurl %}
-    {% elsif pub.paperurl %}
+    {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}
       {% assign primary_link = pub.paperurl %}
     {% elsif pub.arxiv %}
       {% assign primary_link = pub.arxiv %}
+    {% elsif pub.paperurl %}
+      {% assign primary_link = pub.paperurl %}
     {% endif %}
     {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
   {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
   {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
     {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
-    {% assign has_pdf = pub.paperurl %}
+    {% assign has_paperurl = pub.paperurl %}
     {% assign has_arxiv = pub.arxiv %}
-    {% if has_pdf or has_arxiv %}
-      {% capture link_label %}
-        {% if pub.paperurl %}
-          {% if pub.paperurl contains 'arxiv.org' %}ArXiv
-          {% elsif pub.paperurl contains 'proceedings.mlr.press' %}Proceedings
-          {% elsif pub.paperurl contains 'proceedings.neurips.cc' %}Proceedings
-          {% elsif pub.paperurl endswith '.pdf' %}PDF
-          {% else %}Link{% endif %}
-        {% endif %}
-      {% endcapture %}
-      {% if has_pdf and has_arxiv %}
-        <a href="{{ pub.paperurl }}">{{ link_label | strip }}</a> · <a href="{{ pub.arxiv }}">ArXiv</a>
-      {% elsif has_pdf %}
-        <a href="{{ pub.paperurl }}">{{ link_label | strip }}</a>
+    {% if has_paperurl or has_arxiv %}
+      {% assign show_proceedings = false %}
+      {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}
+        {% assign show_proceedings = true %}
+      {% endif %}
+      {% if show_proceedings %}
+        <a href="{{ pub.paperurl }}">Proceedings</a>{% if has_arxiv %} · <a href="{{ pub.arxiv }}">ArXiv</a>{% endif %}
       {% else %}
-        <a href="{{ pub.arxiv }}">ArXiv</a>
+        {% if has_arxiv %}<a href="{{ pub.arxiv }}">ArXiv</a>{% elsif has_paperurl and not pub.paperurl endswith '.pdf' %}<a href="{{ pub.paperurl }}">Link</a>{% endif %}
       {% endif %}
     {% endif %}
   </li>
