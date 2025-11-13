@@ -39,31 +39,31 @@ author_profile: true
 <ul>
   <li>
     <b>A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis</b><br>
-    Akash Kumar, Rahul Parhi, Misha Belkin<br>
+    A Kumar, R Parhi, M Belkin<br>
     <i>The 38th Annual Conference on Learning Theory (COLT 2025)</i><br>
-    <a href="https://arxiv.org/abs/2502.16331">ArXiv</a>
+    <a href="https://proceedings.mlr.press/v291/kumar25b.html">Proceedings</a> · <a href="https://arxiv.org/abs/2502.16331">ArXiv</a>
   </li>
   <li>
     <b>Mirror Descent on Reproducing Kernel Banach Space (RKBS)</b><br>
-    Akash Kumar, Misha Belkin, Parthe Pandit<br>
+    A Kumar, M Belkin, P Pandit<br>
     <i>Journal of Machine Learning Research (JMLR), 2025 (To appear)</i><br>
     <a href="https://arxiv.org/abs/2411.11242">ArXiv</a>
   </li>
   <li>
     <b>The Complexity of Learning Sparse Superposed Features with Feedback</b><br>
-    Akash Kumar<br>
+    A Kumar<br>
     <i>The 42nd International Conference on Machine Learning (ICML 2025)</i><br>
-    <a href="https://arxiv.org/abs/2502.05407">ArXiv</a>
+    <a href="https://proceedings.mlr.press/v267/kumar25b.html">Proceedings</a> · <a href="https://arxiv.org/abs/2502.05407">ArXiv</a>
   </li>
   <li>
     <b>Robust Empirical Risk Minimization with Tolerance</b><br>
-    Robi Bhattacharjee, Kamalika Chaudhuri, Max Hopkins, Akash Kumar, Hantao Yu<br>
+    R Bhattacharjee, K Chaudhuri, M Hopkins, A Kumar, H Yu<br>
     <i>The 34th International Conference on Algorithmic Learning Theory (ALT'23)</i><br>
     <a href="https://arxiv.org/abs/2210.00635">ArXiv</a>
   </li>
   <li>
     <b>Teaching via Best-Case Counterexamples in the Learning-with-Equivalence-Queries Paradigm</b><br>
-    Akash Kumar, Yuxin Chen, Adish Singla<br>
+    A Kumar, Y Chen, A Singla<br>
     <i>The 35th Conference on Neural Information Processing Systems (NeurIPS 2021)</i><br>
     <a href="https://papers.nips.cc/paper/2021/file/e22dd5dabde45eda5a1a67772c8e25dd-Paper.pdf">Link</a>
   </li>

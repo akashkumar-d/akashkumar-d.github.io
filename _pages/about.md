@@ -59,7 +59,15 @@ I am broadly interested in advancing both the theoretical foundations and practi
 <ul markdown="1">
 {% for pub in selected_pubs %}
   <li>
-    <b>{{ pub.title }}</b><br>
+    {% assign primary_link = nil %}
+    {% if pub.paperurl and pub.paperurl contains 'arxiv.org' %}
+      {% assign primary_link = pub.arxiv | default: pub.paperurl %}
+    {% elsif pub.paperurl %}
+      {% assign primary_link = pub.paperurl %}
+    {% elsif pub.arxiv %}
+      {% assign primary_link = pub.arxiv %}
+    {% endif %}
+    {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
   {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
   {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
     {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
