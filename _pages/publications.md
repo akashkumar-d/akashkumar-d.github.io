@@ -71,6 +71,6 @@ author_profile: true
     <b>The Teaching Dimension of Kernel Perceptron</b><br>
     A Kumar, H Zhang, A Singla, Y Chen<br>
     <i>International Conference on Artificial Intelligence and Statistics, 2071-2079</i>
-    <br><a href="https://proceedings.mlr.press/v130/kumar21a/kumar21a.pdf">PDF</a> · <a href="https://arxiv.org/abs/2010.14043">ArXiv</a>
+    <br><a href="https://proceedings.mlr.press/v130/kumar21a.html">Proceedings</a> · <a href="https://arxiv.org/abs/2010.14043">ArXiv</a>
   </li>
 </ul>

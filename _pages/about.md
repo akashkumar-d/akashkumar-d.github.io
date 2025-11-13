@@ -74,14 +74,15 @@ I am broadly interested in advancing both the theoretical foundations and practi
     {% assign has_pdf = pub.paperurl %}
     {% assign has_arxiv = pub.arxiv %}
     {% if has_pdf or has_arxiv %}
-      {% if has_pdf and has_arxiv %}
-        <a href="{{ pub.paperurl }}">PDF</a> · <a href="{{ pub.arxiv }}">ArXiv</a>
-      {% elsif has_pdf %}
-        {% if pub.paperurl contains 'arxiv.org' %}
-          <a href="{{ pub.paperurl }}">ArXiv</a>
-        {% else %}
-          <a href="{{ pub.paperurl }}">PDF</a>
+      {% capture link_label %}
+        {% if pub.paperurl %}
+          {% if pub.paperurl contains 'arxiv.org' %}ArXiv{% elsif pub.paperurl contains 'proceedings.mlr.press' %}Proceedings{% elsif pub.paperurl endswith '.pdf' %}PDF{% else %}Link{% endif %}
         {% endif %}
+      {% endcapture %}
+      {% if has_pdf and has_arxiv %}
+        <a href="{{ pub.paperurl }}">{{ link_label | strip }}</a> · <a href="{{ pub.arxiv }}">ArXiv</a>
+      {% elsif has_pdf %}
+        <a href="{{ pub.paperurl }}">{{ link_label | strip }}</a>
       {% else %}
         <a href="{{ pub.arxiv }}">ArXiv</a>
       {% endif %}
