@@ -554,6 +554,12 @@ details.inline-abstract .abstract-text {
   text-decoration: underline;
 }
 
+/* Do not underline the main paper titles in the publications lists */
+.pub-tab-panels .pub-tab-panel li > a:first-of-type,
+.pub-tab-panels .pub-tab-panel li > a:first-of-type:hover {
+  text-decoration: none;
+}
+
 /* Publications tabs on homepage */
 .pub-tabs {
   margin: 1.25em auto 2em; /* center the tabs row */
