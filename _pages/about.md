@@ -96,9 +96,7 @@ More recently, I'm interested in the following problems (feel free to drop an em
 **Akash Kumar**, Mithilesh Kumar.<br>
 [[ArXiv 2020](https://arxiv.org/abs/2008.09660)]
 
-# Publications by Year
-
-## 2025
+# Publications
 
 1. <b> A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis </b> <br>
 **Akash Kumar**, Rahul Parhi, Misha Belkin <br>
@@ -115,15 +113,11 @@ More recently, I'm interested in the following problems (feel free to drop an em
 <i>The 42nd International Conference on Machine Learning (ICML 2025).</i><br>
 [[ArXiv 2025](https://arxiv.org/abs/2502.05407)]
 
-## 2023
-
 1. <b> Robust Empirical Risk Minimization with Tolerance </b> <br>
 Robi Bhattacharjee, Kamalika Chaudhuri, Max Hopkins, **Akash Kumar**, Hantao Yu (alphabetical order)<br>
 <i>The 34th International Conference on Algorithmic Learning Theory (ALT'23), 2023.</i><br>
 [[ArXiv 2023](https://arxiv.org/abs/2210.00635)]<br>
 <span class="small">A preliminary version appeared in AdvML Frontiers @ ICML 2022.</span>
-
-## 2021
 
 1. <b> Teaching via Best-Case Counterexamples in the Learning-with-Equivalence-Queries Paradigm </b> <br>
 **Akash Kumar**, [Yuxin Chen](https://yuxinchen.org/), [Adish Singla](https://machineteaching.mpi-sws.org/adishsingla.html).<br>
