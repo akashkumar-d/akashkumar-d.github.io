@@ -60,7 +60,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
 {% for pub in selected_pubs %}
   <li>
     <b>{{ pub.title }}</b><br>
-    {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
+  {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
+  {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
     {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
     {% assign has_pdf = pub.paperurl %}
     {% assign has_arxiv = pub.arxiv %}
