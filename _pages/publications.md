@@ -30,17 +30,23 @@ author_profile: true
   <li>
     <b>Convergence of Nearest Neighbor Selective Classification</b><br>
   <span class="author-self">A Kumar</span>, S Dasgupta<br>
-    <i>Manuscript on request.</i> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
+    <i>Manuscript on request.</i>
+    {% assign preprint_convergence = site.publications | where: "title", "Convergence of Nearest Neighbor Selective Classification" | first %}
+    {% if preprint_convergence and preprint_convergence.abstract %} · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">{{ preprint_convergence.abstract }}</div></details>{% endif %}
   </li>
   <li>
     <b>Average-case Complexity of Teaching Convex Polytopes via Halfspace Queries</b><br>
   <span class="author-self">A Kumar</span>, A Singla, Y Yue, Y Chen<br>
-    <a href="https://arxiv.org/abs/2006.14677">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
+    <a href="https://arxiv.org/abs/2006.14677">ArXiv</a>
+    {% assign preprint_avg = site.publications | where: "title", "Average-case Complexity of Teaching Convex Polytopes via Halfspace Queries" | first %}
+    {% if preprint_avg and preprint_avg.abstract %} · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">{{ preprint_avg.abstract }}</div></details>{% endif %}
   </li>
   <li>
     <b>Deletion to Induced Matching</b><br>
   <span class="author-self">A Kumar</span>, M Kumar<br>
-    <a href="https://arxiv.org/abs/2008.09660">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
+    <a href="https://arxiv.org/abs/2008.09660">ArXiv</a>
+    {% assign preprint_dim = site.publications | where: "title", "Deletion to Induced Matching" | first %}
+    {% if preprint_dim and preprint_dim.abstract %} · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">{{ preprint_dim.abstract }}</div></details>{% endif %}
   </li>
 </ul>
 
