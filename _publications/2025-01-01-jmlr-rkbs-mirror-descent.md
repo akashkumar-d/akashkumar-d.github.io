@@ -8,16 +8,21 @@ paperurl: https://arxiv.org/abs/2411.11242
 arxiv: https://arxiv.org/abs/2411.11242
 selected: true
 abstract: |
-  Recent advances in machine learning have led to increased interest in reproducing kernel Banach
-  spaces (RKBS) as a more general framework that extends beyond reproducing kernel Hilbert spaces
-  (RKHS). While representer theorems have been established for several regularized learning schemes
-  in RKBS, optimization methods that broadly encompass these results remain limited. We address a
-  learning problem on Banach spaces endowed with a reproducing kernel and propose an algorithm based
-  on mirror descent (MDA). Our approach iterates in the dual space using the reproducing kernel. We
-  analyze convergence under various assumptions and establish two types of results: (1) conditions
-  under which a linear convergence rate is achievable, akin to optimization in the Euclidean setting,
-  and (2) a standard convergence rate in a constrained setting. To instantiate the algorithm, we
-  introduce a novel family of RKBSs with p-norm (p ≠ 2) characterized by an explicit dual map and
-  kernel.
+  Recent advances in machine learning have led to increased interest in
+  reproducing kernel Banach spaces (RKBS) as a more general framework that extends beyond
+  reproducing kernel Hilbert spaces (RKHS). These works have resulted in the
+  formulation of representer theorems under several regularized learning schemes.
+  However, little is known about an optimization method that encompasses these results in
+  this setting. This paper addresses a learning problem on Banach spaces endowed
+  with a reproducing kernel, focusing on efficient optimization within RKBS. To
+  tackle this challenge, we propose an algorithm based on mirror descent (MDA). Our
+  approach involves an iterative method that employs gradient steps in the dual
+  space of the Banach space using the reproducing kernel. We analyze the convergence properties
+  of our algorithm under various assumptions and establish two types of results: first, we identify
+  conditions under which a linear convergence rate is achievable, akin to optimization in the Euclidean
+  setting, and provide a proof of the linear rate; second, we demonstrate a standard
+  convergence rate in a constrained setting. Moreover, to instantiate this
+  algorithm in practice, we introduce a novel family of RKBSs with $p$-norm ($p \neq 2$),
+  characterized by both an explicit dual map and a kernel.
 ---
 

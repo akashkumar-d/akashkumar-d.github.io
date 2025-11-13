@@ -488,7 +488,7 @@ details.inline-abstract > summary {
   color: #0b7a0b; /* dark green */
   text-decoration: underline;
   list-style: none;
-  font-weight: 600;
+  font-weight: normal; /* ensure not bold */
 }
 
 details.inline-abstract[open] > summary {

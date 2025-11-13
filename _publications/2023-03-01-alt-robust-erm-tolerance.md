@@ -9,15 +9,20 @@ arxiv: https://arxiv.org/abs/2210.00635
 selected: true
 authors_note: "Authors listed alphabetically"
 abstract: |
-  Developing simple, sample-efficient learning algorithms for robust classification is a pressing
-  challenge. Classical robust learning approaches often require exponential sample complexity and
-  complicated improper rules. We study robust empirical risk minimization (RERM), where the learner
-  outputs a hypothesis minimizing training error. RERM is known to fail to robustly learn VC classes,
-  a bound we extend even to ‘nice’ settings such as bounded halfspaces. Motivated by this, we study a
-  relaxed model of tolerant robust learning, in which the output classifier is compared to the best
-  achievable error over slightly enlarged perturbation sets. Under geometric niceness conditions, we
-  show that a natural tolerant variant of RERM suffices for γ-tolerant robust learning of VC classes
-  over R^d, requiring only Õ(VC(H)·d·log(D/γ)/ε^2) samples for robustness regions of (maximum)
-  diameter D.
+  Developing simple, sample-efficient learning algorithms for robust
+  classification is a pressing issue in today’s tech-dominated world, and current theoretical
+  techniques requiring exponential sample complexity and complicated improper
+  learning rules fall far from answering the need. In this work we study the
+  fundamental paradigm of (robust) empirical risk minimization (RERM), a simple
+  process in which the learner outputs any hypothesis minimizing its training error.
+  RERM famously fails to robustly learn VC classes, a bound we show
+  extends even to ‘nice’ settings such as (bounded) halfspaces. As such, we study
+  a recent relaxation of the robust model called tolerant robust
+  learning, where the output classifier is compared to the best achievable
+  error over slightly larger perturbation sets. We show that under geometric
+  niceness conditions, a natural tolerant variant of RERM is indeed sufficient for
+  $\gamma$-tolerant robust learning of VC classes over $\mathbb{R}^d$, and requires only
+  $\tilde{\mathcal{O}}(\mathrm{VC}(\mathcal{H})\,d\,\log(D/\gamma)/\varepsilon^2)$ samples for robustness regions of (maximum)
+  diameter $D$.
 ---
 

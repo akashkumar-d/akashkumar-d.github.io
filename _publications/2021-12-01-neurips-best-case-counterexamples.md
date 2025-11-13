@@ -8,13 +8,19 @@ paperurl: https://proceedings.neurips.cc/paper/2021/hash/e22dd5dabde45eda5a1a677
 pdfurl: https://papers.nips.cc/paper/2021/file/e22dd5dabde45eda5a1a67772c8e25dd-Paper.pdf
 selected: false
 abstract: |
-  We study the sample complexity of teaching—termed the teaching dimension (TD)—in the
-  learning-with-equivalence-queries (LwEQ) paradigm. In this setting, a learner queries whether a
-  proposed hypothesis matches the target; a teacher answers “yes” or supplies a counterexample. While
-  prior work focuses on worst-case or random counterexamples, we consider an optimal teacher who
-  provides best-case counterexamples. We introduce LwEQ-TD to capture teaching complexity (number of
-  queries) under this paradigm and show that best-case counterexamples can significantly reduce the
-  number of queries across various hypothesis classes. We also establish new connections between
-  LwEQ-TD and classical notions of TD in learning-from-samples.
+  We study the sample complexity of teaching, termed as "teaching dimension" (TD)
+  in the literature, for the learning-with-equivalence-queries (LwEQ) paradigm.
+  More concretely, we consider a learner who asks equivalence queries (i.e., “is the
+  queried hypothesis the target hypothesis?”), and a teacher responds either
+  “yes” or “no” along with a counterexample to the queried hypothesis. This learning
+  paradigm has been extensively studied when the learner receives worst-case or
+  random counterexamples; in this paper, we consider the optimal teacher who picks
+  best-case counterexamples to teach the target hypothesis within a hypothesis
+  class. For this optimal teacher, we introduce LwEQ-TD, a notion of TD capturing the
+  teaching complexity (i.e., the number of queries made) in this paradigm. We show
+  that a significant reduction in queries can be achieved with best-case
+  counterexamples, in contrast to worst-case or random counterexamples, for different
+  hypothesis classes. Furthermore, we establish new connections of LwEQ-TD to the
+  well-studied notions of TD in the learning-from-samples paradigm.
 ---
 
