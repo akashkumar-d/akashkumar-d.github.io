@@ -55,7 +55,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 # Selected Work <span class="section-link"><a href="/publications/">(See full list of publications and preprints →)</a></span>
 
-{% assign selected_pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
+{% assign selected_pubs = site.publications | where_exp: "p", "p.selected" | sort: "date" | reverse %}
+{% if selected_pubs and selected_pubs.size > 0 %}
 <ul markdown="1">
 {% for pub in selected_pubs %}
   <li>
@@ -91,6 +92,9 @@ I am broadly interested in advancing both the theoretical foundations and practi
   </li>
 {% endfor %}
 </ul>
+{% else %}
+<p><i>No selected publications to show right now.</i> If you’re the site owner, ensure some entries in <code>_publications</code> have <code>selected: true</code>.</p>
+{% endif %}
 
 
 
