@@ -554,7 +554,14 @@ details.inline-abstract .abstract-text {
   border-radius: 0 $border-radius $border-radius $border-radius;
   padding: 1em;
   /* Make panel closer to the page background (80% site bg, 20% white) */
-  background: mix(#fff, $background-color, 20%);
+  background: mix(#fff, $background-color, 80%);
+}
+
+/* Center the publication lists within each panel for a balanced look */
+.pub-tab-panels .pub-tab-panel > ul {
+  max-width: 60rem; /* ~960px */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pub-tab-panel {
