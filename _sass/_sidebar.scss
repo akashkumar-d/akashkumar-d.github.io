@@ -85,6 +85,9 @@
   img {
     max-width: 220px; /* enlarge portrait */
     border-radius: 0; /* keep rectangular/portrait shape */
+    display: block; /* enable horizontal centering */
+    margin-left: auto;
+    margin-right: auto;
 
     @include breakpoint($large) {
       padding: 5px;
