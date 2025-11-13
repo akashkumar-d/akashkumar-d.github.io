@@ -29,29 +29,9 @@ redirect_from:
 
 
 # About Me
-I am a 5th-year doctoral candidate in the [Computer Science department](https://cse.ucsd.edu/) at the University of California San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). Previously, I have held positions as a research scientist intern/fellow at Adobe Research (San Jose, CA, USA), Max Planck Institute for Software Systems (Saarbrücken, Germany), and IBM Research (Bengaluru, IN). Throughout my education, I have been fortunate to receive several fellowships, including the **Jacobs School of Engineering Fellowship** (supporting my first year of doctoral studies at UCSD), the **Crerar Fellowship** (awarded as the strongest admit to the PhD program at UChicago CS, declined), the **Max Planck Institute Fellowship** (Fellow at MPI-SWS for 1.5 years), and the **Chennai Mathematical Institute Scholastic Fellowship** (five years).
+I am a 5th-year doctoral candidate in the [Computer Science department](https://cse.ucsd.edu/) at the University of California San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (supporting my first year of doctoral studies at UCSD), the **Crerar Fellowship** (awarded as the strongest admit to the PhD program at UChicago CS, declined), the **Max Planck Institute Fellowship** (Fellow at MPI-SWS for 1.5 years), and the **Chennai Mathematical Institute Scholastic Fellowship** (five years).
 
 I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.<be>
-
-More recently, I'm interested in the following problems (feel free to drop an email if you have interesting ideas to discuss):
-
-- **Learning Distance Functions:**  
-  Exploring the intersection of manifold learning, linear representation hypothesis, and classical distance learning.<br>
-  [ArXiv 2025](https://arxiv.org/abs/2502.05407), [ArXiv 2024](https://arxiv.org/pdf/2412.01290)
-
-
-- **Kernel Machines:**  
-  Investigating the statistical-computational gap in learning with fixed or adaptive kernels.<br>
-  [ArXiv 2024](https://arxiv.org/abs/2411.11242), [ArXiv 2021](https://arxiv.org/pdf/2010.14043.pdf)
-
-- **Emergent Behavior in Neural Models:**  
-  Studying phenomena such as grokking and phase transitions in neural architectures.<br>
-  [Work in progress]()
-
-- **Generalization with Non-Parametric Models:**  
-  Addressing reliability and hallucination issues in models using simple yet interpretable classifiers like nearest neighbors.  
-  <span style="color:blue"><i>Manuscript on selective classification with Neareat neighbors available</i></span>
-
   
 **Contact**: (username id) akk002 at ucsd dot edu
 
