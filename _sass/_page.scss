@@ -414,27 +414,14 @@
    Keeps long timelines compact while allowing vertical scroll
    ========================================================================== */
 .home-page .recent-news-scroll {
-  max-height: 260px; /* adjust to taste */
+  /* Aim to show at most ~4 items before scrolling */
+  max-height: 12em;
   overflow: auto;
-  position: relative;
-  padding: 0.5em 0.75em 2.25em; /* extra bottom padding so content isn't hidden behind fade */
+  padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;
-  background: #fff; /* readable contrast against warm page background */
+  background: $background-color; /* match full page background */
   -webkit-overflow-scrolling: touch;
-}
-
-.home-page .recent-news-scroll::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2rem;
-  background: linear-gradient(to bottom, rgba(#fff, 0), #fff 70%, #fff 100%);
-  pointer-events: none; /* don't block scrolling */
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
 }
 
 .home-page .recent-news-scroll ol,
