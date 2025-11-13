@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "commit-and-push-style-fades",
+			"type": "shell",
+			"command": "git add -A && git commit -m \"style(news,scroll): show ~5 news items before scroll; add top/bottom fade overlays to news and publication panels\" && git push origin master",
+			"group": "build"
+		}
+	]
+}
