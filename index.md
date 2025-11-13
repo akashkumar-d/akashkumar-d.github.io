@@ -32,7 +32,7 @@ In the past, I have been fortunate to be supported by the following fellowships:
 
 I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.
   
-**Contact**: (username id) akk002 at ucsd dot edu
+**Email**: akk002 at ucsd dot edu
 
 # Recent News
 <div class="recent-news-scroll" markdown="1">
