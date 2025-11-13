@@ -35,20 +35,41 @@ author_profile: true
 
 ## Publications
 
-<ul markdown="1">
-{% assign pubs = site.publications | sort: "date" | reverse %}
-{% for post in pubs %}
+<!-- Manual list as requested -->
+<ul>
   <li>
-    <b>{{ post.title }}</b><br>
-    {% if post.authors %}{{ post.authors }}<br>{% endif %}
-    {% if post.venue %}<i>{{ post.venue }}</i><br>{% endif %}
-    {% if post.paperurl %}
-      {% if post.paperurl contains 'arxiv.org' %}
-        <a href="{{ post.paperurl }}">ArXiv</a>
-      {% else %}
-        <a href="{{ post.paperurl }}">Link</a>
-      {% endif %}
-    {% endif %}
+    <b>A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis</b><br>
+    Akash Kumar, Rahul Parhi, Misha Belkin<br>
+    <i>The 38th Annual Conference on Learning Theory (COLT 2025)</i><br>
+    <a href="https://arxiv.org/abs/2502.16331">ArXiv</a>
   </li>
-{% endfor %}
+  <li>
+    <b>Mirror Descent on Reproducing Kernel Banach Space (RKBS)</b><br>
+    Akash Kumar, Misha Belkin, Parthe Pandit<br>
+    <i>Journal of Machine Learning Research (JMLR), 2025 (To appear)</i><br>
+    <a href="https://arxiv.org/abs/2411.11242">ArXiv</a>
+  </li>
+  <li>
+    <b>The Complexity of Learning Sparse Superposed Features with Feedback</b><br>
+    Akash Kumar<br>
+    <i>The 42nd International Conference on Machine Learning (ICML 2025)</i><br>
+    <a href="https://arxiv.org/abs/2502.05407">ArXiv</a>
+  </li>
+  <li>
+    <b>Robust Empirical Risk Minimization with Tolerance</b><br>
+    Robi Bhattacharjee, Kamalika Chaudhuri, Max Hopkins, Akash Kumar, Hantao Yu<br>
+    <i>The 34th International Conference on Algorithmic Learning Theory (ALT'23)</i><br>
+    <a href="https://arxiv.org/abs/2210.00635">ArXiv</a>
+  </li>
+  <li>
+    <b>Teaching via Best-Case Counterexamples in the Learning-with-Equivalence-Queries Paradigm</b><br>
+    Akash Kumar, Yuxin Chen, Adish Singla<br>
+    <i>The 35th Conference on Neural Information Processing Systems (NeurIPS 2021)</i><br>
+    <a href="https://papers.nips.cc/paper/2021/file/e22dd5dabde45eda5a1a67772c8e25dd-Paper.pdf">Link</a>
+  </li>
+  <li>
+    <b>The Teaching Dimension of Kernel Perceptron</b><br>
+    A Kumar, H Zhang, A Singla, Y Chen<br>
+    <i>International Conference on Artificial Intelligence and Statistics, 2071-2079</i>
+  </li>
 </ul>
