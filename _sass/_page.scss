@@ -553,7 +553,8 @@ details.inline-abstract .abstract-text {
   border: 1px solid $light-gray;
   border-radius: 0 $border-radius $border-radius $border-radius;
   padding: 1em;
-  background: mix(#fff, $background-color, 85%);
+  /* Make panel closer to the page background (80% site bg, 20% white) */
+  background: mix(#fff, $background-color, 20%);
 }
 
 .pub-tab-panel {
