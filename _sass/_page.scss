@@ -523,7 +523,12 @@ details.inline-abstract .abstract-text {
 
 /* Publications tabs on homepage */
 .pub-tabs {
-  margin: 1.25em 0 2em;
+  margin: 1.25em auto 2em; /* center the tabs row */
+  max-width: 60rem; /* keep content visually centered on large screens */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center; /* center tab labels */
 }
 
 .pub-tab-control {
@@ -555,6 +560,9 @@ details.inline-abstract .abstract-text {
   padding: 1em;
   /* Make panel closer to the page background (80% site bg, 20% white) */
   background: mix(#fff, $background-color, 80%);
+  max-width: 60rem; /* align with tabs width */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Center the publication lists within each panel for a balanced look */
