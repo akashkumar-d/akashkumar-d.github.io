@@ -508,6 +508,7 @@
   /* Show about 3 items then scroll */
   max-height: calc(3 * var(--news-li) + 0.75em);
   overflow: auto;
+}
 /* Remove numbering if any ol sneaks in, while keeping bullets for ul */
 .recent-news-scroll ol {
   list-style: none;
