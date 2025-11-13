@@ -55,7 +55,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 # Selected Work
 
-{% assign selected_pubs = site.publications | where_exp: "p", "p.selected == true" | sort: "date" | reverse %}
+{% assign selected_pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
 <ul>
 {% for pub in selected_pubs %}
   <li>
