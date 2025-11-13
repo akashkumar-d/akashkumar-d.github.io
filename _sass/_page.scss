@@ -438,6 +438,7 @@
    Keeps long timelines compact while allowing vertical scroll
    ========================================================================== */
 .home-page .recent-news-scroll {
+  font-size: 1.06em; /* match publications panel typography */
   /* Aim to show at most ~4 items before scrolling */
   max-height: 12em;
   overflow: auto;
@@ -569,8 +570,8 @@ details.inline-abstract .abstract-text {
   border-bottom: none;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  /* Tabs at ~75% site background tint */
-  background: mix(#fff, $background-color, 75%);
+  /* Tabs at ~75% background tint (favor site background over white) */
+  background: mix($background-color, #fff, 75%);
   color: inherit;
   cursor: pointer;
   user-select: none;
@@ -584,8 +585,8 @@ details.inline-abstract .abstract-text {
   border: 1px solid $light-gray;
   border-radius: 0 $border-radius $border-radius $border-radius;
   padding: 1em;
-  /* Publications panel at ~70% site background tint */
-  background: mix(#fff, $background-color, 70%);
+  /* Publications panel at ~70% background tint */
+  background: mix($background-color, #fff, 70%);
   max-width: 60rem; /* align with tabs width */
   margin-left: auto;
   margin-right: auto;
