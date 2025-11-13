@@ -76,7 +76,11 @@ I am broadly interested in advancing both the theoretical foundations and practi
     {% if has_pdf or has_arxiv %}
       {% capture link_label %}
         {% if pub.paperurl %}
-          {% if pub.paperurl contains 'arxiv.org' %}ArXiv{% elsif pub.paperurl contains 'proceedings.mlr.press' %}Proceedings{% elsif pub.paperurl endswith '.pdf' %}PDF{% else %}Link{% endif %}
+          {% if pub.paperurl contains 'arxiv.org' %}ArXiv
+          {% elsif pub.paperurl contains 'proceedings.mlr.press' %}Proceedings
+          {% elsif pub.paperurl contains 'proceedings.neurips.cc' %}Proceedings
+          {% elsif pub.paperurl endswith '.pdf' %}PDF
+          {% else %}Link{% endif %}
         {% endif %}
       {% endcapture %}
       {% if has_pdf and has_arxiv %}

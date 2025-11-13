@@ -65,7 +65,7 @@ author_profile: true
     <b>Teaching via Best-Case Counterexamples in the Learning-with-Equivalence-Queries Paradigm</b><br>
     A Kumar, Y Chen, A Singla<br>
     <i>The 35th Conference on Neural Information Processing Systems (NeurIPS 2021)</i><br>
-    <a href="https://papers.nips.cc/paper/2021/file/e22dd5dabde45eda5a1a67772c8e25dd-Paper.pdf">Link</a>
+    <a href="https://proceedings.neurips.cc/paper/2021/hash/e22dd5dabde45eda5a1a67772c8e25dd-Abstract.html">Proceedings</a>
   </li>
   <li>
     <b>The Teaching Dimension of Kernel Perceptron</b><br>
