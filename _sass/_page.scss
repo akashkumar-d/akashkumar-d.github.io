@@ -419,15 +419,12 @@
   overflow: auto;
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   margin-bottom: 1.5em; /* add breathing room before next header */
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: $border-radius;
-  /* darker background to signal scrollable area */
-  background: #0f1e33; /* dark navy */
-  color: #fff;
+  /* lighter background to reduce visual weight but remain distinct */
+  background: mix($background-color, #0f1e33, 90%);
   
-  a {
-    color: #9fd3ff;
-  }
+  /* use default text/link colors */
   -webkit-overflow-scrolling: touch;
   /* Firefox scrollbar */
   scrollbar-width: thin;
