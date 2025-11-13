@@ -540,7 +540,7 @@ details.inline-abstract .abstract-text {
   border-bottom: none;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  background: mix(#fff, $background-color, 70%);
+  background: mix(#fff, $background-color, 95%);
   color: inherit;
   cursor: pointer;
   user-select: none;
@@ -554,7 +554,7 @@ details.inline-abstract .abstract-text {
   border: 1px solid $light-gray;
   border-radius: 0 $border-radius $border-radius $border-radius;
   padding: 1em;
-  background: mix(#fff, $background-color, 85%);
+  background: mix(#fff, $background-color, 90%);
 }
 
 .pub-tab-panel {
