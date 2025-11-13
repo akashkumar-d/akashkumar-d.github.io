@@ -53,7 +53,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 </div>
 
 
-# Selected Work
+# Selected Work <span class="section-link"><a href="/publications/">(See full list of publications and preprints →)</a></span>
 
 {% assign selected_pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
 <ul markdown="1">
@@ -91,10 +91,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 {% endfor %}
 </ul>
 
-<p>
-  <a class="btn" href="/publications/">See full list of publications and preprints →</a>
-  
-</p>
+
 
 # Recent talks
 Learning Smooth Distance Functions via Queries (UCSD Presentation) [[Slides](https://drive.google.com/file/d/1vmprFyvcK6mb9zrEU9-55ZWij04WqkOz/view?usp=drive_link)]<br>

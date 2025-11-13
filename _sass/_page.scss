@@ -463,3 +463,15 @@
 .author-self {
   font-weight: 600; /* semibold, below title bold */
 }
+
+/* Inline link next to section headings (e.g., Selected Work) */
+.section-link {
+  font-size: 0.55em; /* smaller than heading */
+  font-weight: 600;
+  margin-left: 0.5em;
+  white-space: nowrap;
+
+  a {
+    text-decoration: none;
+  }
+}
