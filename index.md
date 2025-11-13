@@ -252,8 +252,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
         </li>{% endif %}
       </ul>
 
-      <!-- Opti/Kernels -->
-      <h3>Opti/Kernels</h3>
+  <!-- Optimization and Approximation with Kernel Machines -->
+  <h3>Optimization and Approximation with Kernel Machines</h3>
       <ul>
         {% assign ok1 = site.publications | where: "title", "Mirror Descent on Reproducing Kernel Banach Space (RKBS)" | first %}
         {% assign ok2 = site.publications | where: "title", "A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis" | first %}

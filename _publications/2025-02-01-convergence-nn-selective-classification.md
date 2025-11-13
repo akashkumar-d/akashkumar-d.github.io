@@ -2,7 +2,7 @@
 layout: single
 title: "Convergence of Nearest Neighbor Selective Classification"
 authors: "A Kumar, S Dasgupta"
-venue: "Manuscript"
+venue: "Manuscript on request"
 date: 2025-02-01
 selected: false
 abstract: |
