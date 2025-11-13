@@ -418,6 +418,7 @@
   max-height: 12em;
   overflow: auto;
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
+  margin-bottom: 1.5em; /* add breathing room before next header */
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;
   /* 75% of page background color mixed with 25% white for subtle contrast */
