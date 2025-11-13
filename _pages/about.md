@@ -62,6 +62,15 @@ I am broadly interested in advancing both the theoretical foundations and practi
 </div>
 
 {% assign selected_pubs = site.publications | where_exp: "p", "p.selected" | sort: "date" | reverse %}
+{% if selected_pubs.size == 0 %}
+  {%- assign selected_titles = "A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis|Mirror Descent on Reproducing Kernel Banach Space (RKBS)|Learning Smooth Distance Functions via Queries|Robust Empirical Risk Minimization with Tolerance|The Teaching Dimension of Kernel Perceptron" | split: "|" -%}
+  {%- assign _fallback = "" | split: "" -%}
+  {%- for t in selected_titles -%}
+    {%- assign found = site.publications | where: "title", t | first -%}
+    {%- if found -%}{%- assign _fallback = _fallback | push: found -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign selected_pubs = _fallback -%}
+{% endif %}
 {% if selected_pubs and selected_pubs.size > 0 %}
 <ul markdown="1">
 {% for pub in selected_pubs %}
