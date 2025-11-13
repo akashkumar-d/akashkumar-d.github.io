@@ -115,7 +115,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 
 
-# Recent Talks {#recent-talks}
+# Talks {#recent-talks}
 
 <ul class="talk-list">
   <li>

@@ -511,15 +511,16 @@ I am broadly interested in advancing both the theoretical foundations and practi
     </ul>
   </li>
   <li>
-    <b>Feature Learning in Large Language Models</b>
+    <b>A Gap Between Gaussian Kernel Machine and Neural Networks</b>
     <ul>
-      <li>Adobe Research, San Jose</li>
+      <li>COLT 2025</li>
+      <li>UCSD CSE Thesis Proposal</li>
     </ul>
   </li>
   <li>
-    <b>Teaching via Best-case Counterexamples</b>
+    <b>Feature Learning in Large Language Models</b>
     <ul>
-      <li>UCSD AI Seminar</li>
+      <li>Adobe Research, San Jose</li>
     </ul>
   </li>
 </ul>
