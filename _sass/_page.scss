@@ -458,3 +458,8 @@
   border-radius: 6px;
   border: 2px solid #0f1e33; /* match container background for inset look */
 }
+
+/* Slightly softer emphasis for the site owner's name than titles */
+.author-self {
+  font-weight: 600; /* semibold, below title bold */
+}

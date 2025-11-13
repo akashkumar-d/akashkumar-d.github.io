@@ -69,7 +69,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
     {% endif %}
     {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
   {% if pub.authors %}
-    {% assign authors_text = pub.authors | replace: 'A Kumar', '<b>A Kumar</b>' | replace: 'Akash Kumar', '<b>Akash Kumar</b>' %}
+    {% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}
     {{ authors_text }}<br>
   {% endif %}
   {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
