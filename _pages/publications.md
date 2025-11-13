@@ -44,9 +44,9 @@ author_profile: true
     {% if post.venue %}<i>{{ post.venue }}</i><br>{% endif %}
     {% if post.paperurl %}
       {% if post.paperurl contains 'arxiv.org' %}
-        [[ArXiv]({{ post.paperurl }})]
+        [<a href="{{ post.paperurl }}">ArXiv</a>]
       {% else %}
-        [[Link]({{ post.paperurl }})]
+        [<a href="{{ post.paperurl }}">Link</a>]
       {% endif %}
     {% endif %}
   </li>
