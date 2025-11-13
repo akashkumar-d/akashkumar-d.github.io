@@ -408,3 +408,23 @@
   /* scale down base font size a touch; headings and body text use ems so they scale */
   font-size: 0.95em;
 }
+
+/*
+   Scrollable Recent News container (homepage)
+   Keeps long timelines compact while allowing vertical scroll
+   ========================================================================== */
+.home-page .recent-news-scroll {
+  max-height: 260px; /* adjust to taste */
+  overflow: auto;
+  padding: 0.5em 0.75em;
+  border: 1px solid $lighter-gray;
+  border-radius: $border-radius;
+  background: #fff; /* readable contrast against warm page background */
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-page .recent-news-scroll ol,
+.home-page .recent-news-scroll ul {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}

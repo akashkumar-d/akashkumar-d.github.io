@@ -56,6 +56,8 @@ More recently, I'm interested in the following problems (feel free to drop an em
 **Contact**: (username id) akk002 at ucsd dot edu
 
 # Recent News
+<div class="recent-news-scroll" markdown="1">
+
 1. [August, 2025] Presented my recent work at Princeton University and Yale University (Theory Seminar).
 1. [May, 2025] Selected for the [Summer School](https://mlschool.princeton.edu/) on machine learning theory at Princeton University. 
 1. [May, 2025] One paper to appear in JMLR 2025.
@@ -65,6 +67,8 @@ More recently, I'm interested in the following problems (feel free to drop an em
 1. [Summer, 2023] I was a research scientist intern at Adobe Research (San Jose, CA).
 1. [Aug, 2022] Attended the [Deep learning theory workshop](https://simons.berkeley.edu/workshops/deep-learning-theory-workshop) at Simons Institute, UC Berkeley.
 1. [July, 2022] Attended a summer school on Discrete Mathematics at Charles University, Prague (CZK).
+
+</div>
 
 # Publications and Preprints
 
