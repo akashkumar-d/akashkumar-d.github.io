@@ -39,15 +39,15 @@ I am broadly interested in advancing both the theoretical foundations and practi
 # Recent News
 <div class="recent-news-scroll" markdown="1">
 
-1. [August, 2025] Presented my recent work at Princeton University and Yale University (Theory Seminar).
-1. [May, 2025] Selected for the [Summer School](https://mlschool.princeton.edu/) on machine learning theory at Princeton University. 
-1. [May, 2025] One paper to appear in JMLR 2025.
-1. [May, 2025] Two papers accepted, one each in ICML 2025 and COLT 2025.
-1. [Feb, 2025] Presenting my recent work at ITA'25 (San Diego) and reviewing for COLT'25.
-1. [Dec, 2024] Attended [Unknown Futures of Generalization workshop](https://simons.berkeley.edu/workshops/unknown-futures-generalization) at Simons Institute, UC Berkeley.
-1. [Summer, 2023] I was a research scientist intern at Adobe Research (San Jose, CA).
-1. [Aug, 2022] Attended the [Deep learning theory workshop](https://simons.berkeley.edu/workshops/deep-learning-theory-workshop) at Simons Institute, UC Berkeley.
-1. [July, 2022] Attended a summer school on Discrete Mathematics at Charles University, Prague (CZK).
+ - [<span class="news-date">August, 2025</span>] Presented my recent work at Princeton University and Yale University (Theory Seminar).
+ - [<span class="news-date">May, 2025</span>] Selected for the [Summer School](https://mlschool.princeton.edu/) on machine learning theory at Princeton University. 
+ - [<span class="news-date">May, 2025</span>] One paper to appear in JMLR 2025.
+ - [<span class="news-date">May, 2025</span>] Two papers accepted, one each in ICML 2025 and COLT 2025.
+ - [<span class="news-date">Feb, 2025</span>] Presenting my recent work at ITA'25 (San Diego) and reviewing for COLT'25.
+ - [<span class="news-date">Dec, 2024</span>] Attended [Unknown Futures of Generalization workshop](https://simons.berkeley.edu/workshops/unknown-futures-generalization) at Simons Institute, UC Berkeley.
+ - [<span class="news-date">Summer, 2023</span>] I was a research scientist intern at Adobe Research (San Jose, CA).
+ - [<span class="news-date">Aug, 2022</span>] Attended the [Deep learning theory workshop](https://simons.berkeley.edu/workshops/deep-learning-theory-workshop) at Simons Institute, UC Berkeley.
+ - [<span class="news-date">July, 2022</span>] Attended a summer school on Discrete Mathematics at Charles University, Prague (CZK).
 
 </div>
 
