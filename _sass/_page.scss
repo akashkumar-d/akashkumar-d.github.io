@@ -446,8 +446,9 @@
    ========================================================================== */
 .home-page .recent-news-scroll {
   font-size: 1.06em; /* match publications panel typography */
-  /* Aim to show at most ~4 items before scrolling */
-  max-height: 12em;
+  /* Aim to show ~2.5 items before scrolling */
+  --news-li: 1.5em; /* line-height per news item */
+  max-height: calc(2.5 * var(--news-li) + 1em); /* +1em for vertical padding */
   overflow: auto;
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   margin-bottom: 1.5em; /* add breathing room before next header */
@@ -474,6 +475,11 @@
 .home-page .recent-news-scroll ul {
   margin-top: 0.25em;
   margin-bottom: 0;
+}
+
+/* Ensure ~2.5 items visible by controlling line-height */
+.home-page .recent-news-scroll li {
+  line-height: var(--news-li);
 }
 
 /* WebKit-based browsers (Chrome, Edge, Safari) scrollbar styling */
@@ -621,6 +627,8 @@ details.inline-abstract .abstract-text {
   text-decoration: underline;
   text-underline-offset: 0.15em;
   text-decoration-thickness: 1px;
+  font-style: italic; /* distinguish topic names */
+  font-weight: 600;
 }
 
 /* Show the active panel based on which radio is checked */
