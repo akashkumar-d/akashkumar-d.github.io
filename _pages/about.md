@@ -54,12 +54,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 
 # Selected Work <span class="section-link"><a href="/publications/">(See full list of publications and preprints →)</a></span>
-<div class="debug" style="font-size:0.9em;color:#666;margin-top:-6px;">
-  [debug] publications in collection: {{ site.publications | size }}
-  {% for p in site.publications limit:5 %}
-    <div>• {{ p.title }} — selected={{ p.selected }}</div>
-  {% endfor %}
-</div>
+ 
 
 {% assign selected_pubs = site.publications | where_exp: "p", "p.selected" | sort: "date" | reverse %}
 {% if selected_pubs.size == 0 %}
