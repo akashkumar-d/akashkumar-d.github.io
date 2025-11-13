@@ -521,3 +521,58 @@ details.inline-abstract .abstract-text {
   color: $link-color; /* match title/link color */
   text-decoration: underline;
 }
+
+/* Publications tabs on homepage */
+.pub-tabs {
+  margin: 1.25em 0 2em;
+}
+
+.pub-tab-control {
+  position: absolute;
+  left: -9999px; /* hide radios off-screen */
+}
+
+.pub-tab-label {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.4em 0.8em;
+  border: 1px solid $light-gray;
+  border-bottom: none;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  background: mix(#fff, $background-color, 70%);
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pub-tab-label:hover {
+  text-decoration: none;
+}
+
+.pub-tab-panels {
+  border: 1px solid $light-gray;
+  border-radius: 0 $border-radius $border-radius $border-radius;
+  padding: 1em;
+  background: mix(#fff, $background-color, 85%);
+}
+
+.pub-tab-panel {
+  display: none;
+}
+
+/* Show the active panel based on which radio is checked */
+#tab-selected:checked ~ .pub-tab-panels #panel-selected,
+#tab-all:checked ~ .pub-tab-panels #panel-all,
+#tab-topic:checked ~ .pub-tab-panels #panel-topic {
+  display: block;
+}
+
+/* Active tab label styling */
+#tab-selected:checked + label[for="tab-selected"],
+#tab-all:checked + label[for="tab-all"],
+#tab-topic:checked + label[for="tab-topic"] {
+  background: #fff;
+  border-bottom: 1px solid #fff; /* visually connect with panel */
+  font-weight: 600;
+}
