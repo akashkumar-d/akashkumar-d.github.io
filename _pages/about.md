@@ -84,7 +84,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
       {% if show_proceedings %}
         <a href="{{ pub.paperurl }}">Proceedings</a>{% if has_arxiv %} · <a href="{{ pub.arxiv }}">ArXiv</a>{% endif %}
       {% else %}
-        {% if has_arxiv %}<a href="{{ pub.arxiv }}">ArXiv</a>{% elsif has_paperurl and not pub.paperurl endswith '.pdf' %}<a href="{{ pub.paperurl }}">Link</a>{% endif %}
+        {% if has_arxiv %}<a href="{{ pub.arxiv }}">ArXiv</a>{% elsif has_paperurl %}<a href="{{ pub.paperurl }}">Link</a>{% endif %}
       {% endif %}
       {% if pub.abstract %} · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
     {% endif %}
