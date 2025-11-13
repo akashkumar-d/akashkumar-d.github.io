@@ -14,6 +14,17 @@
   }
 }
 
+/*
+ * Center the entire main container so the sidebar + content block
+ * is visually centered on wide screens (restores earlier centered look).
+ * This keeps responsiveness intact since it's a max-width constraint.
+ */
+#main {
+  max-width: 75rem; /* ~1200px: accommodates sidebar (~220px) + content (~60rem) */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
