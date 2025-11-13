@@ -56,7 +56,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 # Selected Work
 
 {% assign selected_pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
-<ul>
+<ul markdown="1">
 {% for pub in selected_pubs %}
   <li>
     <b>{{ pub.title }}</b><br>

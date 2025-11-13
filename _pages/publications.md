@@ -35,7 +35,7 @@ author_profile: true
 
 ## Publications
 
-<ul>
+<ul markdown="1">
 {% assign pubs = site.publications | sort: "date" | reverse %}
 {% for post in pubs %}
   <li>
