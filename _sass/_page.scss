@@ -485,9 +485,10 @@ details.inline-abstract {
 details.inline-abstract > summary {
   display: inline;
   cursor: pointer;
-  color: $link-color;
+  color: #0b7a0b; /* dark green */
   text-decoration: underline;
   list-style: none;
+  font-weight: 600;
 }
 
 details.inline-abstract[open] > summary {
@@ -496,6 +497,19 @@ details.inline-abstract[open] > summary {
 
 details.inline-abstract .abstract-text {
   display: block;
-  margin-top: 0.35em;
-  color: $text-color;
+  margin-top: 0.5em;
+  color: #2f2f2f; /* slightly darker for readability */
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Venue / conference label styling (purple/dark pink) */
+.pub-venue {
+  color: #7a1fa2; /* amethyst purple */
+}
+
+/* Publication link labels (proceedings/arxiv/abstract indicators) */
+.pub-link {
+  color: #0b7a0b; /* dark green labels */
+  text-decoration: underline;
 }

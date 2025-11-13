@@ -84,7 +84,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
     {{ authors_text }}<br>
   {% endif %}
   {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
-    {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
+  {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
     {% assign has_paperurl = pub.paperurl %}
     {% assign has_arxiv = pub.arxiv %}
     {% if has_paperurl or has_arxiv %}
@@ -93,11 +93,21 @@ I am broadly interested in advancing both the theoretical foundations and practi
         {% assign show_proceedings = true %}
       {% endif %}
       {% if show_proceedings %}
-        <a href="{{ pub.paperurl }}">Proceedings</a>{% if has_arxiv %} · <a href="{{ pub.arxiv }}">ArXiv</a>{% endif %}
+        {% assign proceedings_label = 'proceedings' %}
+        {% if pub.venue %}
+          {% assign v = pub.venue | downcase %}
+          {% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}
+          {% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}
+          {% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}
+          {% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}
+          {% elsif v contains 'alt' %}{% assign proceedings_label = 'alt' %}
+          {% endif %}
+        {% endif %}
+        <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
       {% else %}
-        {% if has_arxiv %}<a href="{{ pub.arxiv }}">ArXiv</a>{% elsif has_paperurl %}<a href="{{ pub.paperurl }}">Link</a>{% endif %}
+        {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
       {% endif %}
-      {% if pub.abstract %} · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+      {% if pub.abstract %} · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
     {% endif %}
   </li>
 {% endfor %}
