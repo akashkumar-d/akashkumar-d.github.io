@@ -55,10 +55,16 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 # Selected Work
 
-- <b>A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis</b> — COLT 2025. [[ArXiv](https://arxiv.org/abs/2502.16331)]
-- <b>Mirror Descent on Reproducing Kernel Banach Space (RKBS)</b> — JMLR 2025 (to appear). [[ArXiv](https://arxiv.org/abs/2411.11242)]
-- <b>The Complexity of Learning Sparse Superposed Features with Feedback</b> — ICML 2025. [[ArXiv](https://arxiv.org/abs/2502.05407)]
-- <b>Learning Smooth Distance Functions via Queries</b> — Preprint. [[ArXiv](https://arxiv.org/pdf/2412.01290)]
+{% assign selected_pubs = site.publications | where_exp: "p", "p.selected == true" | sort: "date" | reverse %}
+<ul>
+{% for pub in selected_pubs %}
+  <li>
+    <b>{{ pub.title }}</b>
+    {% if pub.venue %} — {{ pub.venue }}{% endif %}
+    {% if pub.paperurl %}. <a href="{{ pub.paperurl }}">Link</a>{% endif %}
+  </li>
+{% endfor %}
+</ul>
 
 <p>
   <a class="btn" href="/publications/">See full list of publications and preprints →</a>

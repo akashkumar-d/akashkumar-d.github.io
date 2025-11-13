@@ -419,15 +419,38 @@
   overflow: auto;
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   margin-bottom: 1.5em; /* add breathing room before next header */
-  border: 1px solid $lighter-gray;
+  border: 1px solid rgba(255,255,255,0.15);
   border-radius: $border-radius;
-  /* 75% of page background color mixed with 25% white for subtle contrast */
-  background: mix($background-color, #fff, 75%);
+  /* darker background to signal scrollable area */
+  background: #0f1e33; /* dark navy */
+  color: #fff;
+  
+  a {
+    color: #9fd3ff;
+  }
   -webkit-overflow-scrolling: touch;
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #0a2a5a transparent; /* thumb color, track color */
 }
 
 .home-page .recent-news-scroll ol,
 .home-page .recent-news-scroll ul {
   margin-top: 0.25em;
   margin-bottom: 0;
+}
+
+/* WebKit-based browsers (Chrome, Edge, Safari) scrollbar styling */
+.home-page .recent-news-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.home-page .recent-news-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.home-page .recent-news-scroll::-webkit-scrollbar-thumb {
+  background-color: #0a2a5a; /* dark blue thumb */
+  border-radius: 6px;
+  border: 2px solid #0f1e33; /* match container background for inset look */
 }
