@@ -434,24 +434,17 @@
   margin-right: auto;
 }
 
-/* Equalize section heading sizes on homepage */
+/* Uniform section heading style and size across homepage and About */
 .home-page h1#recent-news,
-.home-page h2#publications {
-  font-size: 1.55em; /* dialed down per feedback */
-  line-height: 1.2;
-  font-family: 'Cinzel', Georgia, serif; /* distinct heading style */
-  letter-spacing: 0.2px;
-}
-
-/* About page: accentuate key section headings with a display serif */
+.home-page h2#publications,
 h1#about-me,
 h1#publications,
 h1#recent-talks,
 h1#some-notes {
-  font-family: 'Cinzel', Georgia, serif;
+  font-family: 'Cinzel', Georgia, serif; /* distinct heading style */
   font-weight: 600;
-  font-size: 1.85em; /* slightly smaller for a subtler look */
-  line-height: 1.25;
+  font-size: 1.6em; /* unified size for all key section headings */
+  line-height: 1.2;
   letter-spacing: 0.2px;
 }
 
