@@ -171,8 +171,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
             {% else %}
               {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
             {% endif %}
-            {% if pub.abstract %} · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
           {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
         </li>
       {% endfor %}
       </ul>
@@ -181,58 +181,224 @@ I am broadly interested in advancing both the theoretical foundations and practi
       {% endif %}
     </section>
 
-    <!-- Topic-Wise Panel (placeholder: list all for now) -->
+    <!-- Topic-Wise Panel -->
     <section id="panel-topic" class="pub-tab-panel" role="tabpanel" aria-labelledby="tab-topic" hidden>
-      {% assign topic_pubs = site.publications | sort: "date" | reverse %}
-      {% if topic_pubs and topic_pubs.size > 0 %}
+      <!-- Learning theory -->
+      <h3>Learning theory</h3>
       <ul>
-      {% for pub in topic_pubs %}
+        {% assign lt1 = site.publications | where: "title", "Robust Empirical Risk Minimization with Tolerance" | first %}
+        {% assign lt2 = site.publications | where: "title", "Learning Smooth Distance Functions via Queries" | first %}
+        {% assign lt3 = site.publications | where: "title", "Convergence of Nearest Neighbor Selective Classification" | first %}
+        {% for tgt in lt1 | split: "|" %}{% endfor %}
+        {% if lt1 %}{% assign pub = lt1 %}{% include base_path %}
         <li>
           {% assign primary_link = nil %}
-          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}
-            {% assign primary_link = pub.paperurl %}
-          {% elsif pub.arxiv %}
-            {% assign primary_link = pub.arxiv %}
-          {% elsif pub.paperurl %}
-            {% assign primary_link = pub.paperurl %}
-          {% endif %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
           {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
-        {% if pub.authors %}
-          {% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}
-          {{ authors_text }}<br>
-        {% endif %}
-        {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
-        {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
-          {% assign has_paperurl = pub.paperurl %}
-          {% assign has_arxiv = pub.arxiv %}
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
           {% if has_paperurl or has_arxiv %}
-            {% assign show_proceedings = false %}
-            {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}
-              {% assign show_proceedings = true %}
-            {% endif %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
             {% if show_proceedings %}
-              {% assign proceedings_label = 'proceedings' %}
-              {% if pub.venue %}
-                {% assign v = pub.venue | downcase %}
-                {% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}
-                {% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}
-                {% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}
-                {% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}
-                {% elsif v contains 'alt' %}{% assign proceedings_label = 'alt' %}
-                {% endif %}
-              {% endif %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% elsif v contains 'alt' %}{% assign proceedings_label = 'alt' %}{% endif %}{% endif %}
               <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
             {% else %}
               {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
             {% endif %}
-            {% if pub.abstract %} · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
           {% endif %}
-        </li>
-      {% endfor %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+        {% if lt2 %}{% assign pub = lt2 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% elsif v contains 'alt' %}{% assign proceedings_label = 'alt' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+        {% if lt3 %}{% assign pub = lt3 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% elsif v contains 'alt' %}{% assign proceedings_label = 'alt' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
       </ul>
-      {% else %}
-      <p><i>No publications found.</i></p>
-      {% endif %}
+
+      <!-- Opti/Kernels -->
+      <h3>Opti/Kernels</h3>
+      <ul>
+        {% assign ok1 = site.publications | where: "title", "Mirror Descent on Reproducing Kernel Banach Space (RKBS)" | first %}
+        {% assign ok2 = site.publications | where: "title", "A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis" | first %}
+        {% if ok1 %}{% assign pub = ok1 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% elsif v contains 'alt' %}{% assign proceedings_label = 'alt' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+        {% if ok2 %}{% assign pub = ok2 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% elsif v contains 'alt' %}{% assign proceedings_label = 'alt' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+      </ul>
+
+      <!-- Interpretability / Feature learning -->
+      <h3>Interpretability / Feature learning</h3>
+      <ul>
+        <!-- Interpretability preprint (not in collection yet) -->
+        <li>
+          <b>Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks</b><br>
+          <span class="author-self">A Kumar</span><br>
+          <i>In submission.</i><br>
+          ArXiv (coming soon)
+        </li>
+        {% assign ifl2 = site.publications | where: "title", "The Complexity of Learning Sparse Superposed Features with Feedback" | first %}
+        {% if ifl2 %}{% assign pub = ifl2 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+      </ul>
+
+      <!-- Interactive learning -->
+      <h3>Interactive learning</h3>
+      <ul>
+        {% assign il1 = site.publications | where: "title", "Teaching via Best-Case Counterexamples in the Learning-with-Equivalence-Queries Paradigm" | first %}
+        {% assign il2 = site.publications | where: "title", "The Teaching Dimension of Kernel Perceptron" | first %}
+        {% assign il3 = site.publications | where: "title", "Average-case Complexity of Teaching Convex Polytopes via Halfspace Queries" | first %}
+        {% if il1 %}{% assign pub = il1 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+        {% if il2 %}{% assign pub = il2 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+        {% if il3 %}{% assign pub = il3 %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% elsif v contains 'aistats' %}{% assign proceedings_label = 'aistats' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+      </ul>
     </section>
 
   </div>
