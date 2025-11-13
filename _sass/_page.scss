@@ -420,7 +420,8 @@
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;
-  background: $background-color; /* match full page background */
+  /* slightly lighter than page background to hint scroll area */
+  background: mix(#fff, $background-color, 85%);
   -webkit-overflow-scrolling: touch;
 }
 
