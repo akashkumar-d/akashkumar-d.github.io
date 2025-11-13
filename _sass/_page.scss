@@ -475,3 +475,27 @@
     text-decoration: none;
   }
 }
+
+/* Inline abstract toggle styles */
+details.inline-abstract {
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+details.inline-abstract > summary {
+  display: inline;
+  cursor: pointer;
+  color: $link-color;
+  text-decoration: underline;
+  list-style: none;
+}
+
+details.inline-abstract[open] > summary {
+  text-decoration: none;
+}
+
+details.inline-abstract .abstract-text {
+  display: block;
+  margin-top: 0.35em;
+  color: $text-color;
+}

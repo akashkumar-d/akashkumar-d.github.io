@@ -86,6 +86,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
       {% else %}
         {% if has_arxiv %}<a href="{{ pub.arxiv }}">ArXiv</a>{% elsif has_paperurl and not pub.paperurl endswith '.pdf' %}<a href="{{ pub.paperurl }}">Link</a>{% endif %}
       {% endif %}
+      {% if pub.abstract %} · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
     {% endif %}
   </li>
 {% endfor %}

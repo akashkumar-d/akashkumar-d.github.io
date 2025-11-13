@@ -18,27 +18,27 @@ author_profile: true
     <b>Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks</b><br>
   <span class="author-self">A Kumar</span><br>
     <i>In submission.</i><br>
-    ArXiv (coming soon)
+    ArXiv (coming soon) · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Learning Smooth Distance Functions via Queries</b><br>
   <span class="author-self">A Kumar</span>, S Dasgupta<br>
-    <a href="https://arxiv.org/abs/2412.01290">ArXiv</a>
+    <a href="https://arxiv.org/abs/2412.01290">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Convergence of Nearest Neighbor Selective Classification</b><br>
   <span class="author-self">A Kumar</span>, S Dasgupta<br>
-    <i>Manuscript on request.</i>
+    <i>Manuscript on request.</i> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Average-case Complexity of Teaching Convex Polytopes via Halfspace Queries</b><br>
   <span class="author-self">A Kumar</span>, A Singla, Y Yue, Y Chen<br>
-    <a href="https://arxiv.org/abs/2006.14677">ArXiv</a>
+    <a href="https://arxiv.org/abs/2006.14677">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Deletion to Induced Matching</b><br>
   <span class="author-self">A Kumar</span>, M Kumar<br>
-    <a href="https://arxiv.org/abs/2008.09660">ArXiv</a>
+    <a href="https://arxiv.org/abs/2008.09660">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
 </ul>
 
@@ -52,36 +52,36 @@ author_profile: true
     <b>A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis</b><br>
   <span class="author-self">A Kumar</span>, R Parhi, M Belkin<br>
     <i>The 38th Annual Conference on Learning Theory (COLT 2025)</i><br>
-    <a href="https://proceedings.mlr.press/v291/kumar25b.html">Proceedings</a> · <a href="https://arxiv.org/abs/2502.16331">ArXiv</a>
+    <a href="https://proceedings.mlr.press/v291/kumar25b.html">Proceedings</a> · <a href="https://arxiv.org/abs/2502.16331">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Mirror Descent on Reproducing Kernel Banach Space (RKBS)</b><br>
   <span class="author-self">A Kumar</span>, M Belkin, P Pandit<br>
     <i>Journal of Machine Learning Research (JMLR), 2025 (To appear)</i><br>
-    <a href="https://arxiv.org/abs/2411.11242">ArXiv</a>
+    <a href="https://arxiv.org/abs/2411.11242">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>The Complexity of Learning Sparse Superposed Features with Feedback</b><br>
   <span class="author-self">A Kumar</span><br>
     <i>The 42nd International Conference on Machine Learning (ICML 2025)</i><br>
-    <a href="https://proceedings.mlr.press/v267/kumar25b.html">Proceedings</a> · <a href="https://arxiv.org/abs/2502.05407">ArXiv</a>
+    <a href="https://proceedings.mlr.press/v267/kumar25b.html">Proceedings</a> · <a href="https://arxiv.org/abs/2502.05407">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Robust Empirical Risk Minimization with Tolerance</b><br>
   R Bhattacharjee, K Chaudhuri, M Hopkins, <span class="author-self">A Kumar</span>, H Yu<br>
     <i>The 34th International Conference on Algorithmic Learning Theory (ALT'23)</i><br>
-    <a href="https://proceedings.mlr.press/v201/bhattacharjee23a">Proceedings</a> · <a href="https://arxiv.org/abs/2210.00635">ArXiv</a>
+    <a href="https://proceedings.mlr.press/v201/bhattacharjee23a">Proceedings</a> · <a href="https://arxiv.org/abs/2210.00635">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Teaching via Best-Case Counterexamples in the Learning-with-Equivalence-Queries Paradigm</b><br>
   <span class="author-self">A Kumar</span>, Y Chen, A Singla<br>
     <i>The 35th Conference on Neural Information Processing Systems (NeurIPS 2021)</i><br>
-    <a href="https://proceedings.neurips.cc/paper/2021/hash/e22dd5dabde45eda5a1a67772c8e25dd-Abstract.html">Proceedings</a>
+    <a href="https://proceedings.neurips.cc/paper/2021/hash/e22dd5dabde45eda5a1a67772c8e25dd-Abstract.html">Proceedings</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>The Teaching Dimension of Kernel Perceptron</b><br>
   <span class="author-self">A Kumar</span>, H Zhang, A Singla, Y Chen<br>
   <i>The 24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021)</i>
-    <br><a href="https://proceedings.mlr.press/v130/kumar21a.html">Proceedings</a> · <a href="https://arxiv.org/abs/2010.14043">ArXiv</a>
+    <br><a href="https://proceedings.mlr.press/v130/kumar21a.html">Proceedings</a> · <a href="https://arxiv.org/abs/2010.14043">ArXiv</a> · <details class="inline-abstract"><summary>Abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
 </ul>
