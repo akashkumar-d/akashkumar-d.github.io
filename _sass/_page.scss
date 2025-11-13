@@ -647,11 +647,42 @@ details.inline-abstract .abstract-text {
   border: 1px solid $light-gray;
   border-radius: 0 $border-radius $border-radius $border-radius;
   padding: 1em;
-  /* Publications panel at ~70% background tint */
-  background: mix($background-color, #fff, 70%);
+  /* Publications panel: subtle, distinct 3D (different from Recent News) */
+  // Base tint derived from site background
+  $pub-panel-bg: mix($background-color, #fff, 70%);
+  background: linear-gradient(145deg, lighten($pub-panel-bg, 3%), darken($pub-panel-bg, 2%));
+  position: relative;
+  box-shadow:
+    8px 10px 18px rgba(0, 0, 0, 0.14),       // outer dark shadow
+    -6px -6px 14px rgba(255, 255, 255, 0.60), // outer light lift
+    inset 0 1px 0 rgba(255, 255, 255, 0.50),  // top inner highlight
+    inset 0 -1px 0 rgba(0, 0, 0, 0.06);       // bottom inner shade
+  transition: box-shadow 160ms ease, transform 160ms ease;
   max-width: 60rem; /* align with tabs width */
   margin-left: auto;
   margin-right: auto;
+}
+
+/* soft vignette/gloss overlay for pub panels (more subtle than news) */
+.pub-tab-panels::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 70% at 8% 0%, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 60%),
+    radial-gradient(150% 80% at 100% 100%, rgba(0, 0, 0, 0.04), transparent 55%);
+}
+
+.pub-tab-panels:hover,
+.pub-tab-panels:focus-within {
+  transform: translateY(-1px);
+  box-shadow:
+    10px 14px 22px rgba(0, 0, 0, 0.18),
+    -8px -8px 16px rgba(255, 255, 255, 0.60),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.07);
 }
 
 /* Center the publication lists within each panel for a balanced look */
@@ -710,4 +741,6 @@ details.inline-abstract .abstract-text {
   background: #fff;
   border-bottom: 1px solid #fff; /* visually connect with panel */
   font-weight: 600;
+  /* slight raised effect to complement panel’s 3D style */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), -2px -2px 4px rgba(255, 255, 255, 0.65);
 }
