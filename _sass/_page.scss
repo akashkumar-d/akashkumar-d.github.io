@@ -433,6 +433,13 @@
   margin-right: auto;
 }
 
+/* Equalize section heading sizes on homepage */
+.home-page h1#recent-news,
+.home-page h2#publications {
+  font-size: 1.6em; /* make both headings visually the same size */
+  line-height: 1.2;
+}
+
 /*
    Scrollable Recent News container (homepage)
    Keeps long timelines compact while allowing vertical scroll
@@ -601,6 +608,13 @@ details.inline-abstract .abstract-text {
 
 .pub-tab-panel {
   display: none;
+}
+
+/* Emphasize Topic-Wise group headings */
+#panel-topic h3 {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
 }
 
 /* Show the active panel based on which radio is checked */
