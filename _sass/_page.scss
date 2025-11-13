@@ -632,6 +632,13 @@ details.inline-abstract .abstract-text {
 
 .pub-tab-panel {
   display: none;
+  /* Allow scrolling of long publication lists; aim to show ~4 papers */
+  --pub-item: 7.5em; /* approximate height per paper block */
+  max-height: calc(4 * var(--pub-item) + 1.5em); /* 4 items + padding */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #0a2a5a transparent; /* Firefox thumb and track */
 }
 
 /* Emphasize Topic-Wise group headings */
@@ -648,6 +655,21 @@ details.inline-abstract .abstract-text {
 #tab-all:checked ~ .pub-tab-panels #panel-all,
 #tab-topic:checked ~ .pub-tab-panels #panel-topic {
   display: block;
+}
+
+/* WebKit scrollbar styling inside publication panels */
+.pub-tab-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pub-tab-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pub-tab-panel::-webkit-scrollbar-thumb {
+  background-color: #0a2a5a;
+  border-radius: 6px;
+  border: 2px solid mix($background-color, #fff, 70%);
 }
 
 /* Active tab label styling */
