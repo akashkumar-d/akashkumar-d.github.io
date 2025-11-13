@@ -3,14 +3,18 @@
    ========================================================================== */
 
 #main {
-  @include container;
+  margin: 1.25em auto 2em; /* center the tabs block */
+  max-width: 95%; /* toggles area ~95% of full width */
   @include clearfix;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
-
+  background: mix(#fff, $background-color, 90%);
+  max-width: 90%; /* publications panel ~90% of full width */
+  margin-left: auto;
+  margin-right: auto;
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
@@ -21,8 +25,16 @@
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(2 of 12);
+  width: 95%; /* keep abstract content slightly inset */
+  box-sizing: border-box;
   }
 
+/* Responsive: use full width on small screens */
+@media (max-width: 600px) {
+  .pub-tabs { max-width: 100%; }
+  .pub-tab-panels { max-width: 100%; }
+  details.inline-abstract .abstract-text { width: 100%; }
+}
   .page__inner-wrap {
     @include full();
 
