@@ -25,11 +25,7 @@
   margin-right: auto;
 }
 
-/* Slightly embolden advisor names in the About section on the homepage */
-.home-page .page__content a[href*="dasgupta"],
-.home-page .page__content a[href*="belkin-wang.org"] {
-  font-weight: 600; /* semi-bold; subtle */
-}
+/* Advisor boldening removed per request */
 
 /* Make publications on the homepage a touch larger for readability */
 .home-page .pub-tab-panel {
@@ -573,7 +569,8 @@ details.inline-abstract .abstract-text {
   border-bottom: none;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  background: #fffefa; /* ~80% site background tint (slightly lighter than panel) */
+  /* Tabs at ~75% site background tint */
+  background: mix(#fff, $background-color, 75%);
   color: inherit;
   cursor: pointer;
   user-select: none;
@@ -587,8 +584,8 @@ details.inline-abstract .abstract-text {
   border: 1px solid $light-gray;
   border-radius: 0 $border-radius $border-radius $border-radius;
   padding: 1em;
-  /* Make panel closer to the page background (80% site bg, 20% white) */
-  background: #fffef8; /* ~70% site background tint (a touch darker for the list) */
+  /* Publications panel at ~70% site background tint */
+  background: mix(#fff, $background-color, 70%);
   max-width: 60rem; /* align with tabs width */
   margin-left: auto;
   margin-right: auto;
