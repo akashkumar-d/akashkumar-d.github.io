@@ -24,10 +24,8 @@ redirect_from:
   </p>
 </div>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
-
-# About Me
+# About Me {#about-me}
 I am a 5th-year doctoral candidate in the [Computer Science department](https://cse.ucsd.edu/) at the University of California-San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). Previously, I was a research fellow at Max Planck Institute (Saarbruecken, Germany) under Dr. [Adish Singla](https://machineteaching.mpi-sws.org/adishsingla.html). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). 
 
 In the past, I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (at UCSD), the **Crerar Fellowship** (awarded by UChicago CS, declined), the **Max Planck Institute Fellowship**, and the **Chennai Mathematical Institute Scholastic Fellowship**.
@@ -52,7 +50,7 @@ I am broadly interested in advancing both the theoretical foundations and practi
 </div>
 
 
-# Selected Work <span class="section-link"><a href="/publications/">(See full list of publications and preprints →)</a></span>
+# Selected Work {#publications} <span class="section-link"><a href="/publications/">(See full list of publications and preprints →)</a></span>
  
 
 {% assign selected_pubs = site.publications | where_exp: "p", "p.selected" | sort: "date" | reverse %}
@@ -117,13 +115,13 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 
 
-# Recent talks
+# Recent Talks {#recent-talks}
 Learning Smooth Distance Functions via Queries (UCSD Presentation) [[Slides](https://drive.google.com/file/d/1vmprFyvcK6mb9zrEU9-55ZWij04WqkOz/view?usp=drive_link)]<br>
 Feature Learning in Large Language Models (Adobe Research, San Jose)<br>
 Teaching via Best-case Counterexamples (UCSD AI Seminar)
 
   
-# Some notes
+# Some Notes {#some-notes}
 <b> [Improved Certified Adversarial Lower Bound Using Adaptive Relaxations](https://drive.google.com/file/d/1lZmiU3NnEhWHOtVuGhURxeFS4DWaYP_n/view?usp=sharing) </b> <br>
 <i>Ongoing project on adversarial deep learning.</i>
 

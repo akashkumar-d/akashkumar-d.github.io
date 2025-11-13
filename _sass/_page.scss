@@ -437,8 +437,22 @@
 /* Equalize section heading sizes on homepage */
 .home-page h1#recent-news,
 .home-page h2#publications {
-  font-size: 1.6em; /* make both headings visually the same size */
+  font-size: 1.7em; /* slightly larger for emphasis */
   line-height: 1.2;
+  font-family: 'Cinzel', Georgia, serif; /* distinct heading style */
+  letter-spacing: 0.2px;
+}
+
+/* About page: accentuate key section headings with a display serif */
+h1#about-me,
+h1#publications,
+h1#recent-talks,
+h1#some-notes {
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 600;
+  font-size: 2.05em; /* larger than default h1 */
+  line-height: 1.25;
+  letter-spacing: 0.2px;
 }
 
 /*
