@@ -399,3 +399,12 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/*
+   Homepage specific tweaks
+   - Slightly reduce overall font sizing on the front page for a tighter look
+   ========================================================================== */
+.home-page {
+  /* scale down base font size a touch; headings and body text use ems so they scale */
+  font-size: 0.95em;
+}
