@@ -59,9 +59,10 @@ I am broadly interested in advancing both the theoretical foundations and practi
 <ul>
 {% for pub in selected_pubs %}
   <li>
-    <b>{{ pub.title }}</b>
-    {% if pub.venue %} — {{ pub.venue }}{% endif %}
-    {% if pub.paperurl %}. <a href="{{ pub.paperurl }}">Link</a>{% endif %}
+    <b>{{ pub.title }}</b><br>
+    {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
+    {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
+    {% if pub.paperurl %}[[Link]({{ pub.paperurl }})]{% endif %}
   </li>
 {% endfor %}
 </ul>

@@ -39,10 +39,10 @@ author_profile: true
 {% assign pubs = site.publications | sort: "date" | reverse %}
 {% for post in pubs %}
   <li>
-    <b>{{ post.title }}</b>
-    {% if post.authors %} — {{ post.authors }}{% endif %}
-    {% if post.venue %} — {{ post.venue }}{% endif %}
-    {% if post.paperurl %} [<a href="{{ post.paperurl }}">Link</a>]{% endif %}
+    <b>{{ post.title }}</b><br>
+    {% if post.authors %}{{ post.authors }}<br>{% endif %}
+    {% if post.venue %}<i>{{ post.venue }}</i><br>{% endif %}
+    {% if post.paperurl %}[[Link]({{ post.paperurl }})]{% endif %}
   </li>
 {% endfor %}
 </ul>
