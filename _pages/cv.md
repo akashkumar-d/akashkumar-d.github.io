@@ -11,6 +11,10 @@ redirect_from:
 
 The detailed PDF verison of my CV can be found here - **Update coming**
 
+Manuscripts
+------
+- Selective classification [PDF]({{ '/files/selective_classification.pdf' | relative_url }})
+
 Research Interests
 ------
 I seek to solve theoretical machine learning problems using ideas from mathematical optimization, probability theory and statistics.
