@@ -35,6 +35,14 @@ author_profile: true
 
 ## Publications
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
+<ul>
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% for post in pubs %}
+  <li>
+    <b>{{ post.title }}</b>
+    {% if post.authors %} — {{ post.authors }}{% endif %}
+    {% if post.venue %} — {{ post.venue }}{% endif %}
+    {% if post.paperurl %} [<a href="{{ post.paperurl }}">Link</a>]{% endif %}
+  </li>
 {% endfor %}
+</ul>
