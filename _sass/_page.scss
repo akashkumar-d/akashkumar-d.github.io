@@ -419,10 +419,17 @@
   overflow: auto;
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   margin-bottom: 1.5em; /* add breathing room before next header */
-  border: 1px solid rgba(0,0,0,0.08);
+  /* beveled border for subtle 3D edge */
+  border-top: 1px solid rgba(255,255,255,0.65);
+  border-left: 1px solid rgba(255,255,255,0.65);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  border-right: 1px solid rgba(0,0,0,0.12);
   border-radius: $border-radius;
-  /* lighter background to reduce visual weight but remain distinct */
-  background: mix($background-color, #0f1e33, 90%);
+  /* soft raised card effect */
+  background: mix($background-color, #0f1e33, 92%);
+  box-shadow:
+    8px 8px 16px rgba(0,0,0,0.18),
+    -6px -6px 14px rgba(255,255,255,0.55);
   
   /* use default text/link colors */
   -webkit-overflow-scrolling: touch;
