@@ -452,23 +452,54 @@
   overflow: auto;
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   margin-bottom: 1.5em; /* add breathing room before next header */
+  position: relative; /* enable layered effects */
   /* beveled border for subtle 3D edge */
   border-top: 1px solid rgba(255,255,255,0.65);
   border-left: 1px solid rgba(255,255,255,0.65);
   border-bottom: 1px solid rgba(0,0,0,0.12);
   border-right: 1px solid rgba(0,0,0,0.12);
   border-radius: $border-radius;
-  /* soft raised card effect */
-  background: mix($background-color, #0f1e33, 92%);
+  /* soft raised card effect with subtle depth gradient */
+  background: linear-gradient(
+    145deg,
+    mix($background-color, #fff, 88%),
+    mix($background-color, #0f1e33, 92%)
+  );
   box-shadow:
-    8px 8px 16px rgba(0,0,0,0.18),
-    -6px -6px 14px rgba(255,255,255,0.55);
+    10px 12px 22px rgba(0,0,0,0.18), /* outer drop */
+    -8px -8px 18px rgba(255,255,255,0.55), /* top-left lift */
+    inset 0 1px 0 rgba(255,255,255,0.4), /* inner ridge highlight */
+    inset 0 -1px 0 rgba(0,0,0,0.06); /* inner shadow at bottom */
+  transition: box-shadow 180ms ease, transform 180ms ease;
   
   /* use default text/link colors */
   -webkit-overflow-scrolling: touch;
   /* Firefox scrollbar */
   scrollbar-width: thin;
   scrollbar-color: #0a2a5a transparent; /* thumb color, track color */
+}
+
+/* glossy highlight overlay for a richer 3D appearance */
+.recent-news-scroll::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 60% at 10% 0%, rgba(255,255,255,0.35), rgba(255,255,255,0) 60%),
+    radial-gradient(150% 80% at 100% 100%, rgba(0,0,0,0.05), rgba(0,0,0,0) 55%);
+}
+
+/* lift on hover/focus-within to emphasize interactivity */
+.recent-news-scroll:hover,
+.recent-news-scroll:focus-within {
+  transform: translateY(-2px);
+  box-shadow:
+    12px 16px 28px rgba(0,0,0,0.22),
+    -10px -10px 22px rgba(255,255,255,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.45),
+    inset 0 -1px 0 rgba(0,0,0,0.08);
 }
 
 .recent-news-scroll ol,
