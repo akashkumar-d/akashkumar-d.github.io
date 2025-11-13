@@ -444,11 +444,11 @@
    Scrollable Recent News container (homepage)
    Keeps long timelines compact while allowing vertical scroll
    ========================================================================== */
-.home-page .recent-news-scroll {
+.recent-news-scroll {
   font-size: 1.06em; /* match publications panel typography */
-  /* Aim to show ~2.5 items before scrolling */
+  /* Aim to show ~3.5 items before scrolling */
   --news-li: 1.5em; /* line-height per news item */
-  max-height: calc(2.5 * var(--news-li) + 1em); /* +1em for vertical padding */
+  max-height: calc(3.5 * var(--news-li) + 1em); /* +1em for vertical padding */
   overflow: auto;
   padding: 0.5em 0.75em; /* normal padding now that fade is removed */
   margin-bottom: 1.5em; /* add breathing room before next header */
@@ -471,27 +471,39 @@
   scrollbar-color: #0a2a5a transparent; /* thumb color, track color */
 }
 
-.home-page .recent-news-scroll ol,
-.home-page .recent-news-scroll ul {
+.recent-news-scroll ol,
+.recent-news-scroll ul {
   margin-top: 0.25em;
   margin-bottom: 0;
 }
 
-/* Ensure ~2.5 items visible by controlling line-height */
-.home-page .recent-news-scroll li {
+/* Remove numbering if any ol sneaks in, while keeping bullets for ul */
+.recent-news-scroll ol {
+  list-style: none;
+  padding-left: 1em; /* maintain slight indent for alignment */
+}
+
+/* Ensure consistent clipping by controlling line-height */
+.recent-news-scroll li {
   line-height: var(--news-li);
 }
 
+/* Month/Year marker styling inside brackets */
+.recent-news-scroll .news-date {
+  font-weight: 600;
+  font-style: italic;
+}
+
 /* WebKit-based browsers (Chrome, Edge, Safari) scrollbar styling */
-.home-page .recent-news-scroll::-webkit-scrollbar {
+.recent-news-scroll::-webkit-scrollbar {
   width: 8px;
 }
 
-.home-page .recent-news-scroll::-webkit-scrollbar-track {
+.recent-news-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.home-page .recent-news-scroll::-webkit-scrollbar-thumb {
+.recent-news-scroll::-webkit-scrollbar-thumb {
   background-color: #0a2a5a; /* dark blue thumb */
   border-radius: 6px;
   border: 2px solid #0f1e33; /* match container background for inset look */
