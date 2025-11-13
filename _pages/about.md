@@ -1,4 +1,3 @@
----
 permalink: /
 title: ""
 excerpt: ""
@@ -6,7 +5,6 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
----
 <div align="center">
   <p style="
       font-family: 'Cinzel', serif;
@@ -33,7 +31,7 @@ I am a 5th-year doctoral candidate in the [Computer Science department](https://
 
 In the past, I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (at UCSD), the **Crerar Fellowship** (awarded as the strongest admit to the PhD program at UChicago CS, declined), the **Max Planck Institute Fellowship** (Fellow at MPI-SWS), and the **Chennai Mathematical Institute Scholastic Fellowship**.
 
-I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.<be>
+I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.
   
 **Contact**: (username id) akk002 at ucsd dot edu
 
