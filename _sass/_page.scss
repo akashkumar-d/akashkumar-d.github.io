@@ -486,7 +486,7 @@
   /* use default text/link colors */
   -webkit-overflow-scrolling: touch;
   /* Firefox scrollbar */
-  scrollbar-width: auto; /* wider scrollbar for easier scrolling */
+  scrollbar-width: thin; /* unify width with publications list */
   scrollbar-color: #0a2a5a transparent; /* thumb color, track color */
 }
 
@@ -543,7 +543,7 @@
 
 /* WebKit-based browsers (Chrome, Edge, Safari) scrollbar styling */
 .recent-news-scroll::-webkit-scrollbar {
-  width: 12px; /* wider scrollbar for visibility */
+  width: 10px; /* unified mid-size */
 }
 
 .recent-news-scroll::-webkit-scrollbar-track {
@@ -758,7 +758,7 @@ details.inline-abstract .abstract-text {
 
 /* WebKit scrollbar styling inside publication panels */
 .pub-tab-panel::-webkit-scrollbar {
-  width: 8px;
+  width: 10px; /* unified mid-size */
 }
 
 .pub-tab-panel::-webkit-scrollbar-track {
