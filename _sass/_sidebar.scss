@@ -83,8 +83,8 @@
   }
 
   img {
-    max-width: 175px;
-    border-radius: 50%;
+    max-width: 220px; /* enlarge portrait */
+    border-radius: 0; /* keep rectangular/portrait shape */
 
     @include breakpoint($large) {
       padding: 5px;
