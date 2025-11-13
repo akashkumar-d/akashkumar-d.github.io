@@ -68,7 +68,10 @@ I am broadly interested in advancing both the theoretical foundations and practi
       {% assign primary_link = pub.paperurl %}
     {% endif %}
     {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
-  {% if pub.authors %}{{ pub.authors }}<br>{% endif %}
+  {% if pub.authors %}
+    {% assign authors_text = pub.authors | replace: 'A Kumar', '<b>A Kumar</b>' | replace: 'Akash Kumar', '<b>Akash Kumar</b>' %}
+    {{ authors_text }}<br>
+  {% endif %}
   {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
     {% if pub.venue %}<i>{{ pub.venue }}</i><br>{% endif %}
     {% assign has_paperurl = pub.paperurl %}
