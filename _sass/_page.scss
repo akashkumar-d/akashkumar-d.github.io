@@ -428,7 +428,8 @@
 
 /* Center core content blocks on the homepage for balanced layout */
 .home-page .page__content {
-  max-width: 60rem;
+  /* widen homepage content a touch to give the news area more room */
+  max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -450,7 +451,8 @@
   --news-li: 1.5em; /* line-height per news item */
   max-height: calc(3.5 * var(--news-li) + 1em); /* +1em for vertical padding */
   overflow: auto;
-  padding: 0.5em 0.75em; /* normal padding now that fade is removed */
+  /* add a bit more horizontal breathing room */
+  padding: 0.75em 1rem;
   margin-bottom: 1.5em; /* add breathing room before next header */
   position: relative; /* enable layered effects */
   /* beveled border for subtle 3D edge */
@@ -475,7 +477,7 @@
   /* use default text/link colors */
   -webkit-overflow-scrolling: touch;
   /* Firefox scrollbar */
-  scrollbar-width: thin;
+  scrollbar-width: auto; /* wider scrollbar for easier scrolling */
   scrollbar-color: #0a2a5a transparent; /* thumb color, track color */
 }
 
@@ -528,7 +530,7 @@
 
 /* WebKit-based browsers (Chrome, Edge, Safari) scrollbar styling */
 .recent-news-scroll::-webkit-scrollbar {
-  width: 8px;
+  width: 12px; /* wider scrollbar for visibility */
 }
 
 .recent-news-scroll::-webkit-scrollbar-track {
