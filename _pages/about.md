@@ -119,25 +119,16 @@ I am broadly interested in advancing both the theoretical foundations and practi
 
 <ul class="talk-list">
   <li>
-    <b>Learning Smooth Distance Functions via Queries</b> (<a href="https://drive.google.com/file/d/1vmprFyvcK6mb9zrEU9-55ZWij04WqkOz/view?usp=drive_link">slides</a>)
-    <ul>
-      <li>Yale Student Theory Seminar</li>
-      <li>Princeton ML Theory Summer School</li>
-      <li>UCSD CSE</li>
-    </ul>
+    <b>Learning Smooth Distance Functions via Queries</b> (<a href="https://drive.google.com/file/d/1vmprFyvcK6mb9zrEU9-55ZWij04WqkOz/view?usp=drive_link">slides</a>)<br>
+    <span class="talk-venues">Yale Student Theory Seminar; Princeton ML Theory Summer School; UCSD CSE</span>
   </li>
   <li>
-    <b>A Gap Between Gaussian Kernel Machine and Neural Networks</b>
-    <ul>
-      <li>COLT 2025</li>
-      <li>UCSD CSE Thesis Proposal</li>
-    </ul>
+    <b>A Gap Between Gaussian Kernel Machine and Neural Networks</b><br>
+    <span class="talk-venues">COLT 2025; UCSD CSE Thesis Proposal</span>
   </li>
   <li>
-    <b>Feature Learning in Large Language Models</b>
-    <ul>
-      <li>Adobe Research, San Jose</li>
-    </ul>
+    <b>Feature Learning in Large Language Models</b><br>
+    <span class="talk-venues">Adobe Research, San Jose</span>
   </li>
 </ul>
 

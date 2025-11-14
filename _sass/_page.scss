@@ -453,6 +453,23 @@ h1#some-notes {
   margin-bottom: 0.75em;
 }
 
+/* Inline talk venues styling (replaces nested bullet lists) */
+.talk-list .talk-venues {
+  display: block;
+  margin: 0.15em 0 0.65em 0;
+  font-style: italic;
+  font-size: 0.95em;
+  letter-spacing: 0.2px;
+  color: #e6e6e6; /* high contrast on dark backgrounds */
+}
+
+/* Improve profile avatar contrast/visibility on dark gradient */
+.author__avatar img {
+  border: 2px solid #FFD700; /* gold ring to match accent */
+  box-shadow: 0 0 8px rgba(255,215,0,0.35), 0 0 4px rgba(0,0,0,0.6);
+  background: radial-gradient(circle at 35% 30%, #2d2d2d, #121212 70%);
+}
+
 /*
    Scrollable Recent News container (homepage)
    Keeps long timelines compact while allowing vertical scroll
