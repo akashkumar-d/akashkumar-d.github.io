@@ -1,0 +1,115 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 60 0 R 61 0 R ] /Count 2 >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+10 0 obj
+<< /Length 7787 >>
+stream
+BT /F1 11 Tf
+1 0 0 1 50 760 Tm (Publications \(Generated: 2025-11-15T19:53:25.595239 UTC\)) Tj
+1 0 0 1 50 748 Tm () Tj
+1 0 0 1 50 736 Tm (The Complexity of Learning Sparse Superposed Features with Feedback) Tj
+1 0 0 1 50 724 Tm (Authors: A Kumar) Tj
+1 0 0 1 50 712 Tm (Venue: The 42nd International Conference on Machine Learning \(ICML 2025\)) Tj
+1 0 0 1 50 700 Tm (Date: 2025-07-01) Tj
+1 0 0 1 50 688 Tm (Links: proceedings: https://proceedings.mlr.press/v267/kumar25b.html | arxiv: https://arxiv.org/abs/2502.05407) Tj
+1 0 0 1 50 676 Tm (Abstract: The success of deep networks is crucially attributed to their ability to capture latent features within a representation space. In this work, we investigate whether the underlying learned features of a model can be efficiently retrieved through feedback from an agent, such as a large language model \(LLM\), in the form of relative triplet comparisons. These features may represent various constructs, including dictionaries in LLMs or components of a covariance matrix of Mahalanobis distances. We analyze the feedback complexity associated with learning a feature matrix in sparse settings. Our resu) Tj
+1 0 0 1 50 664 Tm () Tj
+1 0 0 1 50 652 Tm (A Gap Between the Gaussian RKHS and Neural Networks: An Infinite-Center Asymptotic Analysis [selected]) Tj
+1 0 0 1 50 640 Tm (Authors: A Kumar, R Parhi, M Belkin) Tj
+1 0 0 1 50 628 Tm (Venue: The 38th Annual Conference on Learning Theory \(COLT 2025\)) Tj
+1 0 0 1 50 616 Tm (Date: 2025-06-01) Tj
+1 0 0 1 50 604 Tm (Links: proceedings: https://proceedings.mlr.press/v291/kumar25b.html | arxiv: https://arxiv.org/abs/2502.16331) Tj
+1 0 0 1 50 592 Tm (Abstract: Recent works have characterized the function-space inductive bias of infinite-width bounded-norm single-hidden-layer neural networks as a kind of bounded-variation-type space. This novel neural network Banach space encompasses many classical multivariate function spaces, including certain Sobolev spaces and the spectral Barron spaces. Notably, this Banach space also includes functions that exhibit less classical regularity, such as those that only vary in a few directions. On bounded domains, it is well-established that the Gaussian reproducing kernel Hilbert space \(RKHS\) strictly embeds into ) Tj
+1 0 0 1 50 580 Tm () Tj
+1 0 0 1 50 568 Tm (Convergence of Nearest Neighbor Selective Classification) Tj
+1 0 0 1 50 556 Tm (Authors: A Kumar, S Dasgupta) Tj
+1 0 0 1 50 544 Tm (Venue: Manuscript on request) Tj
+1 0 0 1 50 532 Tm (Date: 2025-02-01) Tj
+1 0 0 1 50 520 Tm (Abstract: An elementary approach to \\emph{selective classification} \(also known as \\emph{classification with a reject option}\) is the $\(k,k'\)$-rule: given a query $x$, find its $k$ nearest neighbors in the training set and if at least $k'$ of them have the same label, then predict that label; otherwise, abstain. We study this method under minimal assumptions to understand its convergence properties and its tradeoffs between error and abstention rate.) Tj
+1 0 0 1 50 508 Tm () Tj
+1 0 0 1 50 496 Tm (Mirror Descent on Reproducing Kernel Banach Space \(RKBS\) [selected]) Tj
+1 0 0 1 50 484 Tm (Authors: A Kumar, M Belkin, P Pandit) Tj
+1 0 0 1 50 472 Tm (Venue: Journal of Machine Learning Research \(JMLR\), 2025 \(To appear\)) Tj
+1 0 0 1 50 460 Tm (Date: 2025-01-01) Tj
+1 0 0 1 50 448 Tm (Links: proceedings: https://arxiv.org/abs/2411.11242 | arxiv: https://arxiv.org/abs/2411.11242) Tj
+1 0 0 1 50 436 Tm (Abstract: Recent advances in machine learning have led to increased interest in reproducing kernel Banach spaces \(RKBS\) as a more general framework that extends beyond reproducing kernel Hilbert spaces \(RKHS\). These works have resulted in the formulation of representer theorems under several regularized learning schemes. However, little is known about an optimization method that encompasses these results in this setting. This paper addresses a learning problem on Banach spaces endowed with a reproducing kernel, focusing on efficient optimization within RKBS. To tackle this challenge, we propose an algor) Tj
+1 0 0 1 50 424 Tm () Tj
+1 0 0 1 50 412 Tm (Learning Smooth Distance Functions via Queries [selected]) Tj
+1 0 0 1 50 400 Tm (Authors: A Kumar, S Dasgupta) Tj
+1 0 0 1 50 388 Tm (Venue: Preprint) Tj
+1 0 0 1 50 376 Tm (Date: 2024-12-01) Tj
+1 0 0 1 50 364 Tm (Links: proceedings: https://arxiv.org/abs/2412.01290 | arxiv: https://arxiv.org/abs/2412.01290) Tj
+1 0 0 1 50 352 Tm (Abstract: In this work, we investigate the problem of learning distance functions within the query-based learning framework, where a learner is able to pose triplet queries of the form: “Is $x_i$ closer to $x_j$ or $x_k$?” We establish formal guarantees on the query complexity required to learn smooth, but otherwise general, distance functions under two notions of approximation: $\\omega$-additive approximation and $\(1 + \\omega\)$-multiplicative approximation. For the additive approximation, we propose a global method whose query complexity is quadratic in the size of a finite cover of the sample space. F) Tj
+1 0 0 1 50 340 Tm () Tj
+1 0 0 1 50 328 Tm (Robust Empirical Risk Minimization with Tolerance [selected]) Tj
+1 0 0 1 50 316 Tm (Authors: R Bhattacharjee, K Chaudhuri, M Hopkins, A Kumar, H Yu) Tj
+1 0 0 1 50 304 Tm (Venue: The 34th International Conference on Algorithmic Learning Theory \(ALT'23\)) Tj
+1 0 0 1 50 292 Tm (Date: 2023-03-01) Tj
+1 0 0 1 50 280 Tm (Links: proceedings: https://proceedings.mlr.press/v201/bhattacharjee23a | arxiv: https://arxiv.org/abs/2210.00635) Tj
+1 0 0 1 50 268 Tm (Abstract: Developing simple, sample-efficient learning algorithms for robust classification is a pressing issue in today’s tech-dominated world, and current theoretical techniques requiring exponential sample complexity and complicated improper learning rules fall far from answering the need. In this work we study the fundamental paradigm of \(robust\) empirical risk minimization \(RERM\), a simple process in which the learner outputs any hypothesis minimizing its training error. RERM famously fails to robustly learn VC classes, a bound we show extends even to ‘nice’ settings such as \(bounded\) halfspaces. A) Tj
+1 0 0 1 50 256 Tm () Tj
+1 0 0 1 50 244 Tm (Teaching via Best-Case Counterexamples in the Learning-with-Equivalence-Queries Paradigm) Tj
+1 0 0 1 50 232 Tm (Authors: A Kumar, Y Chen, A Singla) Tj
+1 0 0 1 50 220 Tm (Venue: The 35th Conference on Neural Information Processing Systems \(NeurIPS 2021\)) Tj
+1 0 0 1 50 208 Tm (Date: 2021-12-01) Tj
+1 0 0 1 50 196 Tm (Links: proceedings: https://proceedings.neurips.cc/paper/2021/hash/e22dd5dabde45eda5a1a67772c8e25dd-Abstract.html) Tj
+1 0 0 1 50 184 Tm (Abstract: We study the sample complexity of teaching, termed as "teaching dimension" \(TD\) in the literature, for the learning-with-equivalence-queries \(LwEQ\) paradigm. More concretely, we consider a learner who asks equivalence queries \(i.e., “is the queried hypothesis the target hypothesis?”\), and a teacher responds either “yes” or “no” along with a counterexample to the queried hypothesis. This learning paradigm has been extensively studied when the learner receives worst-case or random counterexamples; in this paper, we consider the optimal teacher who picks best-case counterexamples to teach the tar) Tj
+1 0 0 1 50 172 Tm () Tj
+1 0 0 1 50 160 Tm (The Teaching Dimension of Kernel Perceptron [selected]) Tj
+1 0 0 1 50 148 Tm (Authors: A Kumar, H Zhang, A Singla, Y Chen) Tj
+1 0 0 1 50 136 Tm (Venue: The 24th International Conference on Artificial Intelligence and Statistics \(AISTATS 2021\)) Tj
+1 0 0 1 50 124 Tm (Date: 2021-04-01) Tj
+1 0 0 1 50 112 Tm (Links: proceedings: https://proceedings.mlr.press/v130/kumar21a.html | arxiv: https://arxiv.org/abs/2010.14043) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Length 2601 >>
+stream
+BT /F1 11 Tf
+1 0 0 1 50 760 Tm (Abstract: Algorithmic machine teaching has been studied under the linear setting where exact teaching is possible. However, little is known for teaching nonlinear learners. Here, we establish the sample complexity of teaching, aka teaching dimension, for kernelized perceptrons for different families of feature maps. As a warm-up, we show that the teaching complexity is $\\Theta\(d\)$ for the exact teaching of linear perceptrons in $\\mathbb{R}^d$, and $\\Theta\(d^k\)$ for kernel perceptron with a polynomial kernel of order $k$. Furthermore, under certain smooth assumptions on the data distribution, we establis) Tj
+1 0 0 1 50 748 Tm () Tj
+1 0 0 1 50 736 Tm (Deletion to Induced Matching) Tj
+1 0 0 1 50 724 Tm (Authors: A Kumar, M Kumar) Tj
+1 0 0 1 50 712 Tm (Venue: Preprint) Tj
+1 0 0 1 50 700 Tm (Date: 2020-08-21) Tj
+1 0 0 1 50 688 Tm (Links: proceedings: https://arxiv.org/abs/2008.09660 | arxiv: https://arxiv.org/abs/2008.09660) Tj
+1 0 0 1 50 676 Tm (Abstract: In the DELETION TO INDUCED MATCHING problem, we are given a graph $G$ on $n$ vertices, $m$ edges and a non-negative integer $k$ and asks whether there exists a set of vertices $S \\subseteq V\(G\)$ such that $|S|\\le k$ and the size of any connected component in $G-S$ is exactly 2. In this paper, we provide a fixed-parameter tractable \(FPT\) algorithm of running time $O^*\(1.748^{k}\)$ for the DELETION TO INDUCED MATCHING problem using branch-and-reduce strategy and path decomposition. We also extend our work to the exact-exponential version of the problem.) Tj
+1 0 0 1 50 664 Tm () Tj
+1 0 0 1 50 652 Tm (Average-case Complexity of Teaching Convex Polytopes via Halfspace Queries) Tj
+1 0 0 1 50 640 Tm (Authors: A Kumar, A Singla, Y Yue, Y Chen) Tj
+1 0 0 1 50 628 Tm (Venue: Preprint) Tj
+1 0 0 1 50 616 Tm (Date: 2020-06-25) Tj
+1 0 0 1 50 604 Tm (Links: proceedings: https://arxiv.org/abs/2006.14677 | arxiv: https://arxiv.org/abs/2006.14677) Tj
+1 0 0 1 50 592 Tm (Abstract: We examine the task of locating a target region among those induced by intersections of $n$ halfspaces in $\\mathbb{R}^d$. This generic task connects to fundamental machine learning problems, such as training a perceptron and learning a $\\phi$-separable dichotomy. We investigate the average teaching complexity of the task, i.e., the minimal number of samples \(halfspace queries\) required by a teacher to help a version-space learner in locating a randomly selected target. As our main result, we show that the average-case teaching complexity is $\\Theta\(d\)$, which is in sharp contrast to the worst-) Tj
+ET
+endstream
+endobj
+60 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 10 0 R >>
+endobj
+61 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 11 0 R >>
+endobj
+xref
+0 62
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000125 00000 n 
+0000000195 00000 n 
+0000008035 00000 n 
+0000010689 00000 n 
+0000010817 00000 n 
+trailer
+<< /Size 62 /Root 1 0 R >>
+startxref
+10945
+%%EOF
