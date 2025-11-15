@@ -1,0 +1,53 @@
+name: Build Publications PDF
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '_publications/**'
+      - 'scripts/generate_publications_markdown.py'
+      - '.github/workflows/publications-pdf.yml'
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate consolidated markdown
+        run: |
+          python3 scripts/generate_publications_markdown.py
+          ls -l publications_compiled.md
+
+      - name: Install pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-recommended texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      - name: Convert to PDF via pandoc
+        run: |
+          pandoc publications_compiled.md \
+            --pdf-engine=xelatex \
+            -V geometry:margin=1in \
+            -V mainfont="DejaVu Serif" \
+            -V monofont="DejaVu Sans Mono" \
+            -o publications.pdf
+          ls -l publications.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: publications-pdf
+          path: publications.pdf
+
+      - name: Save markdown artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: publications-markdown
+          path: publications_compiled.md
