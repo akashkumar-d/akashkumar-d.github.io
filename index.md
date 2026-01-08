@@ -133,6 +133,12 @@ I am broadly interested in advancing both the theoretical foundations and practi
       {% if all_pubs and all_pubs.size > 0 %}
       <ul>
       {% assign conv_pub = site.publications | where: "title", "Convergence of Nearest Neighbor Selective Classification" | first %}
+      <!-- Manual addition: Interpretability preprint (not in collection yet) -->
+      <li>
+        <a href="https://arxiv.org/pdf/2601.03919"><b>A Gap Between Decision Trees and Neural Networks</b></a><br>
+        <span class="author-self">Akash Kumar</span><br>
+        <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a>
+      </li>
       {% assign alt_pub = site.publications | where: "title", "Robust Empirical Risk Minimization with Tolerance" | first %}
       {% assign conv_rendered = false %}
       {% for pub in all_pubs %}
@@ -395,12 +401,11 @@ I am broadly interested in advancing both the theoretical foundations and practi
       <!-- Interpretability / Feature learning -->
       <h3>Interpretability / Feature learning</h3>
       <ul>
-        <!-- Interpretability preprint (not in collection yet) -->
+        <!-- Interpretability preprint (updated with arxiv link) -->
         <li>
-          <b>Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks</b><br>
-          <span class="author-self">A Kumar</span><br>
-          <i>In submission.</i><br>
-          ArXiv (coming soon)
+          <a href="https://arxiv.org/pdf/2601.03919"><b>A Gap Between Decision Trees and Neural Networks</b></a><br>
+          <span class="author-self">Akash Kumar</span><br>
+          <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a>
         </li>
         {% assign ifl2 = site.publications | where: "title", "The Complexity of Learning Sparse Superposed Features with Feedback" | first %}
         {% if ifl2 %}{% assign pub = ifl2 %}
