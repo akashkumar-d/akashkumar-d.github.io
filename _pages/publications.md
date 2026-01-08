@@ -30,7 +30,7 @@ author_profile: true
   <li>
     <b>Convergence of Nearest Neighbor Selective Classification</b><br>
   <span class="author-self">A Kumar</span>, S Dasgupta<br>
-    <i>Manuscript on request.</i>
+  <a class="pub-link" href="https://akashkumar-d.github.io/files/selective_classification.pdf">pdf</a>
     {% assign preprint_convergence = site.publications | where: "title", "Convergence of Nearest Neighbor Selective Classification" | first %}
   {% if preprint_convergence and preprint_convergence.abstract %} · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ preprint_convergence.abstract }}</div></details>{% endif %}
   </li>
