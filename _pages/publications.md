@@ -18,7 +18,7 @@ author_profile: true
     <b>Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks</b><br>
   <span class="author-self">A Kumar</span><br>
     <i>In submission.</i><br>
-  ArXiv (coming soon) · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
+  <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a> · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
   </li>
   <li>
     <b>Learning Smooth Distance Functions via Queries</b><br>
