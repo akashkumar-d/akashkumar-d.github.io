@@ -137,7 +137,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
       <li>
         <a href="https://arxiv.org/pdf/2601.03919"><b>A Gap Between Decision Trees and Neural Networks</b></a><br>
         <span class="author-self">Akash Kumar</span><br>
-        <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a>
+        <span class="pub-venue"><i>Preprint</i></span><br>
+        <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a> · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
       </li>
       {% assign alt_pub = site.publications | where: "title", "Robust Empirical Risk Minimization with Tolerance" | first %}
       {% assign conv_rendered = false %}
@@ -405,7 +406,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
         <li>
           <a href="https://arxiv.org/pdf/2601.03919"><b>A Gap Between Decision Trees and Neural Networks</b></a><br>
           <span class="author-self">Akash Kumar</span><br>
-          <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a>
+          <span class="pub-venue"><i>Preprint</i></span><br>
+          <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a> · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
         </li>
         {% assign ifl2 = site.publications | where: "title", "The Complexity of Learning Sparse Superposed Features with Feedback" | first %}
         {% if ifl2 %}{% assign pub = ifl2 %}
