@@ -6,4 +6,26 @@ venue: "Preprint"
 date: 2026-09-02
 arxiv: https://arxiv.org/abs/2609.39408
 selected: true
+abstract: |
+  Population loss can remain nearly constant while a neural network learns a substantially
+  more predictive representation. We establish this separation for two-layer ReLU and
+  leaky-ReLU networks trained on Gaussian inputs by simultaneous fixed-step population
+  gradient descent on all parameters. For structured additive teachers whose links are
+  positive mixtures of Gaussian-damped cubics in H¹(γ), we give explicit conditions under
+  which small IID Gaussian initialization yields a high-probability guarantee: at a
+  checkpoint during a high-loss plateau, minimum alignment between the rank-r teacher
+  subspace and the leading r-dimensional eigenspace of the predictor's average gradient
+  outer product (AGOP) increases by at least 1/2, and the minimum refit MSE under
+  unchanged coefficient budgets decreases by more than 0.399, both relative to
+  initialization. The same trajectory subsequently attains a trained loss below every
+  value in the plateau window. A complementary result treats unequal-weight cubic teachers
+  and small additive Sobolev perturbations using projected-feature refits. For SwiGLU
+  networks with an exactly fitted intercept, we prove leading-AGOP alignment during a loss
+  plateau at fixed width and dimension as Gaussian initialization vanishes, for
+  square-integrable teachers with nonzero Hermite content of degree one, two, or three. A
+  rank-one cubic specialization also gives simultaneous unrestricted-refit gains at a
+  prescribed width. An approximation lower bound further shows that certain interaction
+  targets retain nonzero error when ridge neurons are restricted to shared orthogonal axes
+  within the teacher subspace. Population-moment experiments with ReLU students across 21
+  teachers and 50 initializations per teacher complement the analysis.
 ---
