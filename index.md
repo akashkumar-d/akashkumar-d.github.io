@@ -580,6 +580,15 @@ I am broadly interested in advancing both the theoretical foundations and practi
 </ul>
 
   
+# Teaching
+
+<ul class="talk-list">
+  <li>
+    <b>CSE 151A – ML: Learning Algorithms</b> (<a href="/files/cse151a_evaluations.pdf">student evaluations</a>)<br>
+    <span class="talk-venues">Instructor, UC San Diego, Summer Session I 2026</span>
+  </li>
+</ul>
+
 # Some notes
 <b> [Improved Certified Adversarial Lower Bound Using Adaptive Relaxations](https://drive.google.com/file/d/1lZmiU3NnEhWHOtVuGhURxeFS4DWaYP_n/view?usp=sharing) </b> <br>
 <i>Ongoing project on adversarial deep learning.</i>
