@@ -416,6 +416,27 @@ I am broadly interested in advancing both the theoretical foundations and practi
           {% endif %}
           {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
         </li>{% endif %}
+        {% assign ifl_buddha = site.publications | where: "title", "Awakening of the Buddha: Subspace Learning During Population-Loss Plateaus" | first %}
+        {% if ifl_buddha %}{% assign pub = ifl_buddha %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
         {% assign ifl_polar = site.publications | where: "title", "Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer" | first %}
         {% if ifl_polar %}{% assign pub = ifl_polar %}
         <li>
