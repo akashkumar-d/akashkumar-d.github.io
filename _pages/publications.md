@@ -20,6 +20,11 @@ author_profile: true
     <i>In preparation for submission.</i>
   </li>
   <li>
+    <b>Awakening of the Buddha: Subspace Learning During Population-Loss Plateaus</b><br>
+  <span class="author-self">A Kumar</span><br>
+  <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2609.39408">arxiv</a>
+  </li>
+  <li>
     <b>Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer</b><br>
   <span class="author-self">A Kumar</span><br>
   <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2609.36240">arxiv</a>
