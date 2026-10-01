@@ -15,6 +15,16 @@ author_profile: true
 
 <ul>
   <li>
+    <b>Flat Loss, Evolving Features: Grokking in Modular Addition</b><br>
+  <span class="author-self">A Kumar</span>, K Sankaranarayanan<br>
+    <i>In preparation for submission.</i>
+  </li>
+  <li>
+    <b>Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer</b><br>
+  <span class="author-self">A Kumar</span><br>
+  <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2609.36240">arxiv</a>
+  </li>
+  <li>
     <b>Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks</b><br>
   <span class="author-self">A Kumar</span><br>
     <i>In submission.</i><br>
