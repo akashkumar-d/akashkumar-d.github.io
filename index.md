@@ -26,7 +26,7 @@ author_profile: true
 
 
 # About Me
-I am a 5th-year doctoral candidate in the [Computer Science department](https://cse.ucsd.edu/) at the University of California-San Diego where I am co-advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/) and Prof. [Misha Belkin](http://misha.belkin-wang.org/). Previously, I was a research fellow at Max Planck Institute (Saarbruecken, Germany) under Dr. [Adish Singla](https://machineteaching.mpi-sws.org/adishsingla.html). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). 
+I am a 5th-year doctoral candidate in the [Computer Science department](https://cse.ucsd.edu/) at the University of California-San Diego where I am primarily advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/). Previously, I was a research fellow at Max Planck Institute (Saarbruecken, Germany) under Dr. [Adish Singla](https://machineteaching.mpi-sws.org/adishsingla.html). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). 
 
 In the past, I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (at UCSD), the **Crerar Fellowship** (awarded by UChicago CS, declined), the **Max Planck Institute Fellowship**, and the **Chennai Mathematical Institute Scholastic Fellowship**.
 
@@ -133,13 +133,6 @@ I am broadly interested in advancing both the theoretical foundations and practi
       {% if all_pubs and all_pubs.size > 0 %}
       <ul>
       {% assign conv_pub = site.publications | where: "title", "Convergence of Nearest Neighbor Selective Classification" | first %}
-      <!-- Manual addition: Interpretability preprint (not in collection yet) -->
-      <li>
-        <a href="https://arxiv.org/pdf/2601.03919"><b>A Gap Between Decision Trees and Neural Networks</b></a><br>
-        <span class="author-self">Akash Kumar</span><br>
-        <span class="pub-venue"><i>Preprint</i></span><br>
-        <a class="pub-link pub-link-arxiv" href="https://arxiv.org/pdf/2601.03919">arxiv</a> · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">Abstract forthcoming.</div></details>
-      </li>
       {% assign alt_pub = site.publications | where: "title", "Robust Empirical Risk Minimization with Tolerance" | first %}
       {% assign conv_rendered = false %}
       {% for pub in all_pubs %}
@@ -402,6 +395,48 @@ I am broadly interested in advancing both the theoretical foundations and practi
       <!-- Interpretability / Feature learning -->
       <h3>Interpretability / Feature learning</h3>
       <ul>
+        {% assign ifl_grok = site.publications | where: "title", "Flat Loss, Evolving Features: Grokking in Modular Addition" | first %}
+        {% if ifl_grok %}{% assign pub = ifl_grok %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
+        {% assign ifl_polar = site.publications | where: "title", "Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer" | first %}
+        {% if ifl_polar %}{% assign pub = ifl_polar %}
+        <li>
+          {% assign primary_link = nil %}
+          {% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign primary_link = pub.paperurl %}{% elsif pub.arxiv %}{% assign primary_link = pub.arxiv %}{% elsif pub.paperurl %}{% assign primary_link = pub.paperurl %}{% endif %}
+          {% if primary_link %}<a href="{{ primary_link }}">{% endif %}<b>{{ pub.title }}</b>{% if primary_link %}</a>{% endif %}<br>
+          {% if pub.authors %}{% assign authors_text = pub.authors | replace: 'A Kumar', '<span class="author-self">A Kumar</span>' | replace: 'Akash Kumar', '<span class="author-self">Akash Kumar</span>' %}{{ authors_text }}<br>{% endif %}
+          {% if pub.authors_note %}<i>{{ pub.authors_note }}</i><br>{% endif %}
+          {% if pub.venue %}<span class="pub-venue"><i>{{ pub.venue }}</i></span><br>{% endif %}
+          {% assign has_paperurl = pub.paperurl %}{% assign has_arxiv = pub.arxiv %}
+          {% if has_paperurl or has_arxiv %}
+            {% assign show_proceedings = false %}{% if pub.paperurl and (pub.paperurl contains 'proceedings.mlr.press' or pub.paperurl contains 'proceedings.neurips.cc') %}{% assign show_proceedings = true %}{% endif %}
+            {% if show_proceedings %}
+              {% assign proceedings_label = 'proceedings' %}{% if pub.venue %}{% assign v = pub.venue | downcase %}{% if v contains 'colt' %}{% assign proceedings_label = 'colt' %}{% elsif v contains 'icml' %}{% assign proceedings_label = 'icml' %}{% elsif v contains 'neurips' or v contains 'nips' %}{% assign proceedings_label = 'neurips' %}{% endif %}{% endif %}
+              <a class="pub-link pub-link-primary" href="{{ pub.paperurl }}">{{ proceedings_label }}</a>{% if has_arxiv %} · <a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% endif %}
+            {% else %}
+              {% if has_arxiv %}<a class="pub-link pub-link-arxiv" href="{{ pub.arxiv }}">arxiv</a>{% elsif has_paperurl %}<a class="pub-link" href="{{ pub.paperurl }}">link</a>{% endif %}
+            {% endif %}
+          {% endif %}
+          {% if pub.abstract %}{% if has_paperurl or has_arxiv %} · {% endif %}<details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ pub.abstract }}</div></details>{% endif %}
+        </li>{% endif %}
         <!-- Interpretability preprint (updated with arxiv link) -->
         <li>
           <a href="https://arxiv.org/pdf/2601.03919"><b>A Gap Between Decision Trees and Neural Networks</b></a><br>
