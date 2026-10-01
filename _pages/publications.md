@@ -23,11 +23,15 @@ author_profile: true
     <b>Awakening of the Buddha: Subspace Learning During Population-Loss Plateaus</b><br>
   <span class="author-self">A Kumar</span><br>
   <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2609.39408">arxiv</a>
+    {% assign preprint_buddha = site.publications | where: "title", "Awakening of the Buddha: Subspace Learning During Population-Loss Plateaus" | first %}
+  {% if preprint_buddha and preprint_buddha.abstract %} · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ preprint_buddha.abstract }}</div></details>{% endif %}
   </li>
   <li>
     <b>Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer</b><br>
   <span class="author-self">A Kumar</span><br>
   <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2609.36240">arxiv</a>
+    {% assign preprint_polar = site.publications | where: "title", "Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer" | first %}
+  {% if preprint_polar and preprint_polar.abstract %} · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ preprint_polar.abstract }}</div></details>{% endif %}
   </li>
   <li>
     <b>Is Interpretability at Odds with Accuracy? Inapproximability of Decision Trees by Shallow Networks</b><br>
