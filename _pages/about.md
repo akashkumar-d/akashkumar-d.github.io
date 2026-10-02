@@ -26,7 +26,7 @@ redirect_from:
 
 
 # About Me {#about-me}
-I am a 5th-year doctoral candidate in the [Computer Science department](https://cse.ucsd.edu/) at the University of California-San Diego where I am primarily advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/). I have also worked as a research intern at [IBM Research](https://research.ibm.com/) and [Adobe Research](https://research.adobe.com/), and as a research fellow at the [Max Planck Institute for Software Systems](https://www.mpi-sws.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). 
+I am a 5th-year doctoral candidate in the [Computer Science department](https://cse.ucsd.edu/) at the University of California-San Diego where I am primarily advised by Prof. [Sanjoy Dasgupta](https://cseweb.ucsd.edu/~dasgupta/). Previously, I was a research intern at [IBM Research](https://research.ibm.com/) and [Adobe Research](https://research.adobe.com/), and a research fellow at the [Max Planck Institute for Software Systems](https://www.mpi-sws.org/). I completed a BSc in Mathematics and Computer Science, followed by an MSc in Computer Science at Chennai Mathematical Institute (CMI, India). 
 
 In the past, I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (at UCSD), the **Crerar Fellowship** (awarded by UChicago CS, declined), the **Max Planck Institute Fellowship**, and the **Chennai Mathematical Institute Scholastic Fellowship**.
 
