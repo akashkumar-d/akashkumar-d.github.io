@@ -37,6 +37,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
 # Recent News
 <div class="recent-news-scroll" markdown="1">
 
+ - [<span class="news-date">Feb, 2026</span>] Presented *Task-Aligned, Robust, and Interpretable Representation Learning* in the Department of Statistics at Columbia University.
+ - [<span class="news-date">Feb, 2026</span>] Gave a Graduation Day talk, *A Chasm at Shallow Depth*, at ITA 2026 (San Diego).
  - [<span class="news-date">August, 2025</span>] Presented my recent work at Princeton University and Yale University (Theory Seminar).
  - [<span class="news-date">May, 2025</span>] Selected for the [Summer School](https://mlschool.princeton.edu/) on machine learning theory at Princeton University. 
  - [<span class="news-date">May, 2025</span>] One paper to appear in JMLR 2025.
@@ -565,6 +567,14 @@ I am broadly interested in advancing both the theoretical foundations and practi
 # Recent talks
 
 <ul class="talk-list">
+  <li>
+    <b>Task-Aligned, Robust, and Interpretable Representation Learning</b><br>
+    <span class="talk-venues">Department of Statistics, Columbia University</span>
+  </li>
+  <li>
+    <b>A Chasm at Shallow Depth</b><br>
+    <span class="talk-venues">ITA 2026 Graduation Day, San Diego</span>
+  </li>
   <li>
     <b>Learning Smooth Distance Functions via Queries</b> (<a href="https://drive.google.com/file/d/1vmprFyvcK6mb9zrEU9-55ZWij04WqkOz/view?usp=drive_link">slides</a>)<br>
     <span class="talk-venues">Yale Student Theory Seminar; Princeton ML Theory Summer School; UCSD CSE</span>
