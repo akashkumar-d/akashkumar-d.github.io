@@ -30,12 +30,7 @@ I am a 5th-year doctoral candidate in the [Computer Science department](https://
 
 In the past, I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (at UCSD), the **Crerar Fellowship** (awarded by UChicago CS, declined), the **Max Planck Institute Fellowship**, and the **Chennai Mathematical Institute Scholastic Fellowship**.
 
-My research is in the theory of machine learning, currently along three lines:
-
-- **Representation learning beyond the loss.** Neural networks can learn task-aligned features while the training loss stays nearly flat. I study when and how this happens, and how optimizers, schedules and data choices can account for it ([polar updates](https://arxiv.org/abs/2609.36240), [Awakening of the Buddha](https://arxiv.org/abs/2609.39408)).
-- **Learning from feedback.** I study what comparisons, queries and other feedback reveal about the structure a model has learned, and how much feedback suffices to recover or correct it ([sparse superposed features](https://proceedings.mlr.press/v267/kumar25b.html), [distances via queries](https://arxiv.org/abs/2412.01290)).
-- **Separations between model classes.** I characterize what neural networks, kernel machines and decision trees can represent efficiently, and study optimization beyond Hilbert spaces ([Gaussian RKHS vs. networks](https://proceedings.mlr.press/v291/kumar25b.html), [mirror descent on RKBS](https://arxiv.org/abs/2411.11242)).
-
+I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.
   
 **Email**: akk002 at ucsd dot edu
 
