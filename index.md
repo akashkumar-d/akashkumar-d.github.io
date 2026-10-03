@@ -37,6 +37,8 @@ I am broadly interested in advancing both the theoretical foundations and practi
 # Recent News
 <div class="recent-news-scroll" markdown="1">
 
+ - [<span class="news-date">Sep, 2026</span>] Two new preprints on arXiv: [Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer](https://arxiv.org/abs/2609.36240) and [Awakening of the Buddha: Subspace Learning During Population-Loss Plateaus](https://arxiv.org/abs/2609.39408).
+ - [<span class="news-date">Summer, 2026</span>] Taught CSE 151A (Machine Learning) at UC San Diego as a Summer Graduate Teaching Scholar ([student evaluations](/files/cse151a_evaluations.pdf)).
  - [<span class="news-date">Feb, 2026</span>] Presented *Task-Aligned, Robust, and Interpretable Representation Learning* in the Department of Statistics at Columbia University.
  - [<span class="news-date">Feb, 2026</span>] Gave a Graduation Day talk, *A Chasm at Shallow Depth*, at ITA 2026 (San Diego).
  - [<span class="news-date">August, 2025</span>] Presented my recent work at Princeton University and Yale University (Theory Seminar).
