@@ -449,6 +449,18 @@ h1#some-notes {
   letter-spacing: 0.2px;
 }
 
+/* Research-interest bullets in About Me: tighter spacing than default lists */
+.page__content p.research-lead {
+  margin-bottom: 0.35em;
+}
+.page__content ul.research-list {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.page__content ul.research-list > li {
+  margin-bottom: 0.15em;
+}
+
 /* Talks list spacing */
 .talk-list > li {
   margin-bottom: 0.75em;
