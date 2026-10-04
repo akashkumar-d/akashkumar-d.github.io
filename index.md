@@ -30,11 +30,12 @@ I am a 5th-year doctoral candidate in the [Computer Science department](https://
 
 In the past, I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (at UCSD), the **Crerar Fellowship** (awarded by UChicago CS, declined), the **Max Planck Institute Fellowship**, and the **Chennai Mathematical Institute Scholastic Fellowship**.
 
-I am interested in the foundations of how neural networks learn, and in how these insights can inform practice:
-
-- **Dynamics:** understanding how training forms task-relevant features, including during plateaus where the loss barely moves.
-- **Training methods:** designing optimizers, schedules and data choices around the representations they produce.
-- **Feedback:** using comparisons and queries to reveal what a model has learned, and to correct it.
+<p class="research-lead">I am interested in the foundations of how neural networks learn, and in how these insights can inform practice:</p>
+<ul class="research-list">
+  <li><strong>Dynamics:</strong> understanding how training forms task-relevant features, including during plateaus where the loss barely moves.</li>
+  <li><strong>Training methods:</strong> designing optimizers, schedules and data choices around the representations they produce.</li>
+  <li><strong>Feedback:</strong> using comparisons and queries to reveal what a model has learned, and to correct it.</li>
+</ul>
 
   
 **Email**: akk002 at ucsd dot edu
