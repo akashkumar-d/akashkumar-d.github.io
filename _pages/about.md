@@ -30,7 +30,12 @@ I am a 5th-year doctoral candidate in the [Computer Science department](https://
 
 In the past, I have been fortunate to be supported by the following fellowships: **Jacobs School of Engineering Fellowship** (at UCSD), the **Crerar Fellowship** (awarded by UChicago CS, declined), the **Max Planck Institute Fellowship**, and the **Chennai Mathematical Institute Scholastic Fellowship**.
 
-I am broadly interested in advancing both the theoretical foundations and practical applications of machine learning. Specifically, my focus lies in statistical machine learning, algorithm design, interactive learning, optimization, and the theoretical aspects of deep learning. I am particularly enthusiastic about leveraging tools from probability theory, analysis, differential geometry, and statistics to rigorously study the computational and statistical efficiency of learning algorithms. My goal is to deepen our understanding of the principles underlying data-driven learning and the capabilities of machines to extract meaningful insights from complex datasets.
+I am interested in the foundations of how neural networks learn, and in how these insights can inform practice:
+
+- **Dynamics:** understanding how training forms task-relevant features, including during plateaus where the loss barely moves.
+- **Training methods:** designing optimizers, schedules and data choices around the representations they produce.
+- **Feedback:** using comparisons and queries to reveal what a model has learned, and to correct it.
+
   
 **Email**: akk002 at ucsd dot edu
 
