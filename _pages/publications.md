@@ -17,7 +17,7 @@ author_profile: true
   <li>
     <b>Flat Loss, Evolving Features: Grokking in Modular Addition</b><br>
   <span class="author-self">A Kumar</span>, K Sankaranarayanan<br>
-    <i>In preparation for submission.</i>
+    <i>Under review.</i>
   </li>
   <li>
     <b>Awakening of the Buddha: Subspace Learning During Population-Loss Plateaus</b><br>
