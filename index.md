@@ -43,6 +43,7 @@ In the past, I have been fortunate to be supported by the following fellowships:
 # Recent News
 <div class="recent-news-scroll" markdown="1">
 
+ - [<span class="news-date">Oct, 2026</span>] New preprint on arXiv: [Flat Loss, Evolving Features: Grokking in Modular Addition](https://arxiv.org/abs/2610.22593).
  - [<span class="news-date">Sep, 2026</span>] Two new preprints on arXiv: [Can Representation Learning Decouple from Loss Minimization? Polar Updates Have an Answer](https://arxiv.org/abs/2609.36240) and [Awakening of the Buddha](https://arxiv.org/abs/2609.39408).
  - [<span class="news-date">Summer, 2026</span>] Taught CSE 151A (Machine Learning) at UC San Diego as a Summer Graduate Teaching Scholar.
  - [<span class="news-date">Feb, 2026</span>] Presented *Task-Aligned, Robust, and Interpretable Representation Learning* in the Department of Statistics at Columbia University.
