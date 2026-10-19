@@ -17,7 +17,10 @@ author_profile: true
   <li>
     <b>Flat Loss, Evolving Features: Grokking in Modular Addition</b><br>
   <span class="author-self">A Kumar</span>, K Sankaranarayanan<br>
-    <i>Under review.</i>
+    <i>Under review.</i><br>
+  <a class="pub-link pub-link-arxiv" href="https://arxiv.org/abs/2610.22593">arxiv</a>
+    {% assign preprint_grok = site.publications | where: "title", "Flat Loss, Evolving Features: Grokking in Modular Addition" | first %}
+  {% if preprint_grok and preprint_grok.abstract %} · <details class="inline-abstract"><summary>abstract</summary><div class="abstract-text">{{ preprint_grok.abstract }}</div></details>{% endif %}
   </li>
   <li>
     <b>Awakening of the Buddha: Subspace Learning During Population-Loss Plateaus</b><br>
