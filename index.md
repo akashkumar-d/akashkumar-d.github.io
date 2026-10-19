@@ -32,9 +32,9 @@ In the past, I have been fortunate to be supported by the following fellowships:
 
 <p class="research-lead">I am interested in the foundations of how neural networks learn, and in how these insights can inform practice:</p>
 <ul class="research-list">
-  <li><strong>Dynamics:</strong> understanding how training forms task-relevant features, including during plateaus where the loss barely moves.</li>
-  <li><strong>Training methods:</strong> designing optimizers, schedules and data choices around the representations they produce.</li>
-  <li><strong>Feedback:</strong> using comparisons and queries to reveal what a model has learned, and to correct it.</li>
+  <li><strong>Dynamics:</strong> <em>understanding how training forms task-relevant features, including during plateaus where the loss barely moves.</em></li>
+  <li><strong>Training methods:</strong> <em>designing optimizers, schedules and data choices around the representations they produce.</em></li>
+  <li><strong>Feedback:</strong> <em>using comparisons and queries to reveal what a model has learned, and to correct it.</em></li>
 </ul>
 
   
